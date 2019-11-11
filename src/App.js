@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import MainContainer from './components/MainContainer';
+import {MainContainer} from './components/Containers';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
@@ -11,10 +11,9 @@ import Teaching from './components/Teaching';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench } from '@fortawesome/free-solid-svg-icons';
-
-library.add(fab, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench);
+import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench, faHammer, faPhone, faLaptop } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faGithub, faLinkedin, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench, faHammer, faPhone, faLaptop);
 
 
 

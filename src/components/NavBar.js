@@ -6,14 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const StyledNav = styled.nav`
     display: flex;
     flex-direction: column;
-    background: grey;
-    width: 20%;
-    border: 1px solid black;
+    justify-content: space-evenly;
+    width: 20.5%;
 `;
 
 const StyledBttn = styled.button`
-    padding: 15%;
+    padding: 9%;
     font-size: 1.5rem;
+    border-radius: 20px;
+    font-family: 'Audiowide', cursive;
 `;
 
 function NavBar ({history}) {
@@ -35,7 +36,7 @@ function NavBar ({history}) {
                 Skills
             </StyledBttn>
             <StyledBttn onClick={()=>history.push('projects')}>
-            
+                <FontAwesomeIcon icon='hammer'/>
                 &nbsp;
                 Projects
             </StyledBttn>
@@ -45,12 +46,12 @@ function NavBar ({history}) {
                 Teaching Experience
             </StyledBttn>
             <StyledBttn onClick={()=>history.push('blog')}>
-            
+                <FontAwesomeIcon icon="laptop" />
                 &nbsp;
                 Blog
             </StyledBttn>
             <StyledBttn onClick={()=>history.push('contact')}>
-            
+                <FontAwesomeIcon icon="phone" />
                 &nbsp;
                 Contact Me
             </StyledBttn>
