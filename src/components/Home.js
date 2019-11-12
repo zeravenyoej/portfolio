@@ -1,5 +1,5 @@
 import React from 'react';
-import PicOfMe from '../images/joey.png';
+import CityMe from '../images/CityMe.png';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -11,11 +11,13 @@ const StyledHero = styled.div`
 `;
 
 const H1 = styled.h1`
-    font-size: 3.7rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px white;
     `;
 
 const H2 = styled.h2`
-    font-size: 2.7rem;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px white;
     `;
 
 const LinkCont = styled.div`
@@ -24,9 +26,9 @@ const LinkCont = styled.div`
     `;
 
     const StyledImg = styled.img`
-        max-height: 80vh;
+        max-height: 60vh;
         width: auto;
-        border-radius:110px;
+        border-radius:60px;
     `;
 
 function Home () {
@@ -35,6 +37,7 @@ function Home () {
         <HomeDiv>
             <StyledHero>
                 <H1>Joseph Nevarez</H1>
+                <hr></hr>
                 <H2> Web Developer</H2>
                 <LinkCont>
                     <FontAwesomeIcon icon='github' />
@@ -43,7 +46,7 @@ function Home () {
                 </LinkCont>
             </StyledHero>
             <div>
-                <StyledImg src={PicOfMe} alt='Me'/>
+                <StyledImg src={CityMe} alt='Me'/>
             </div>
         </HomeDiv>
     );
