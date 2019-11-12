@@ -7,13 +7,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Teaching from './components/Teaching';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench, faHammer, faPhone, faLaptop } from '@fortawesome/free-solid-svg-icons';
-library.add(fab, faGithub, faLinkedin, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench, faHammer, faPhone, faLaptop);
+library.add(fab, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, faWrench, faHammer, faPhone, faLaptop);
 
 
 
@@ -26,7 +25,6 @@ function App() {
         <Route path='/about' render={(props)=><About {...props}/>}/>
         <Route path='/skills' render={(props)=><Skills {...props}/>}/>
         <Route path='/projects' render={(props)=><Projects {...props}/>}/>
-        <Route path='/teaching' render={(props)=><Teaching {...props}/>}/>
         <Route path='/blog' render={(props)=><Blog {...props}/>}/>
         <Route path='/contact' render={(props)=><Contact {...props}/>}/>
       </MainContainer>

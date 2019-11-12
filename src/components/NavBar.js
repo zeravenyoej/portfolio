@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const StyledNav = styled.nav`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 20.5%;
 `;
 
@@ -15,7 +15,7 @@ const StyledBttn = styled.button`
     font-size: 1.5rem;
     border-radius: 20px;
     font-family: 'Audiowide', cursive;
-    background-color: black;
+    background-color: #129e9e96;
     color: white;
 `;
 
@@ -41,11 +41,6 @@ function NavBar ({history}) {
                 <FontAwesomeIcon icon='hammer'/>
                 &nbsp;
                 Projects
-            </StyledBttn>
-            <StyledBttn onClick={()=>history.push('teaching')}>
-                <FontAwesomeIcon icon="graduation-cap" />
-                &nbsp;
-                Teaching Experience
             </StyledBttn>
             <StyledBttn onClick={()=>history.push('blog')}>
                 <FontAwesomeIcon icon="laptop" />
