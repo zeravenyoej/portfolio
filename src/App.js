@@ -2,7 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
-import NavBarSide from './components/NavBarSide';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -18,17 +17,16 @@ library.add(fab, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, 
 function App() {
 
   const MainContainer = styled.div`
-    margin: auto;
+    /* margin: auto; */
     padding: 4%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: space-evenly; */
 `;
 
   return (
     <div className="App">
       <MainContainer>
-        <Route exact path='/' render={(props)=><NavBarSide {...props}/>}/>
         <Route exact path='/' render={(props)=><Home {...props}/>}/>
         <Route path='/about' render={(props)=><About {...props}/>}/>
         <Route path='/skills' render={(props)=><Skills {...props}/>}/>

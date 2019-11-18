@@ -5,27 +5,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faColumns } from '@fortawesome/free-solid-svg-icons';
 
 
-const StyledNavBar = styled.nav`
+const StyledNav = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 20.5%;
 `;
 
+
 const StyledBttn = styled.button`
-    padding: 9%;
+    padding: 4%;
     font-size: 1.5rem;
-    border-radius: 20px;
     font-family: 'Audiowide', cursive;
-    background-color: #129e9e96;
+    background-color: #45A29E;
     color: white;
     text-shadow: 1px 1px black;
     box-shadow: 2px 2px black;
+    margin: 10px;
 `;
 
 export default function NavBarSide ({history}) {
     return (
-        <StyledNavBar>
+        <StyledNav>
             <StyledBttn onClick={()=>history.push('/')}>
                 <FontAwesomeIcon icon="arrow-alt-circle-up" />
                 &nbsp;
@@ -51,7 +51,7 @@ export default function NavBarSide ({history}) {
                 &nbsp;
                 Contact Me
             </StyledBttn>
-        </StyledNavBar>
+        </StyledNav>
     );
 };
 
