@@ -1,10 +1,13 @@
 import React from 'react';
+import NavBarTop from './NavBarTop';
 
 
 function Projects () {
 
     return (
-        <h1>hi</h1>
+        <div>
+            <NavBarTop/>
+        </div>
     );
 };
 

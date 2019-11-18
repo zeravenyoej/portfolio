@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { directive } from '@babel/types';
+// import { faColumns } from '@fortawesome/free-solid-svg-icons';
 
 
-const StyledNav = styled.nav`
+const StyledNavBar = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,11 +19,13 @@ const StyledBttn = styled.button`
     font-family: 'Audiowide', cursive;
     background-color: #129e9e96;
     color: white;
+    text-shadow: 1px 1px black;
+    box-shadow: 2px 2px black;
 `;
 
-function NavBar ({history}) {
+export default function NavBarSide ({history}) {
     return (
-        <StyledNav>
+        <StyledNavBar>
             <StyledBttn onClick={()=>history.push('/')}>
                 <FontAwesomeIcon icon="arrow-alt-circle-up" />
                 &nbsp;
@@ -42,18 +46,13 @@ function NavBar ({history}) {
                 &nbsp;
                 Projects
             </StyledBttn>
-            <StyledBttn onClick={()=>history.push('blog')}>
-                <FontAwesomeIcon icon="laptop" />
-                &nbsp;
-                Blog
-            </StyledBttn>
             <StyledBttn onClick={()=>history.push('contact')}>
                 <FontAwesomeIcon icon="phone" />
                 &nbsp;
                 Contact Me
             </StyledBttn>
-        </StyledNav>
+        </StyledNavBar>
     );
 };
 
-export default NavBar;
+

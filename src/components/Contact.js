@@ -1,10 +1,13 @@
 import React from 'react';
+import NavBarTop from './NavBarTop';
 
 
 function Contact () {
 
     return (
-        <h1>hello</h1>
+        <div>
+        <NavBarTop/>
+    </div>
     );
 };
 

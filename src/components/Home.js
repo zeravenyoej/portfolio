@@ -2,7 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { Link } from 'react-router-dom';
-import { HomeDiv } from './Containers';
+import CityMe from '../images/CityMe.png';
+
+
+const HomeDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-image: url(${CityMe});
+    background-size: cover;
+    height: 80vh;
+    padding: 2%;
+    border-radius: 10px;
+`;
+
 
 const StyledHero = styled.div`
     font-family: 'Audiowide', cursive;

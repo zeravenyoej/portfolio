@@ -1,13 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import {MainContainer} from './components/Containers';
-import NavBar from './components/NavBar';
+import styled from 'styled-components';
+import NavBarSide from './components/NavBarSide';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Blog from './components/Blog';
 import Contact from './components/Contact';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -17,15 +16,23 @@ library.add(fab, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, 
 
 
 function App() {
+
+  const MainContainer = styled.div`
+    margin: auto;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+`;
+
   return (
     <div className="App">
       <MainContainer>
-        <Route path='/' render={(props)=><NavBar {...props}/>}/>
+        <Route exact path='/' render={(props)=><NavBarSide {...props}/>}/>
         <Route exact path='/' render={(props)=><Home {...props}/>}/>
         <Route path='/about' render={(props)=><About {...props}/>}/>
         <Route path='/skills' render={(props)=><Skills {...props}/>}/>
         <Route path='/projects' render={(props)=><Projects {...props}/>}/>
-        <Route path='/blog' render={(props)=><Blog {...props}/>}/>
         <Route path='/contact' render={(props)=><Contact {...props}/>}/>
       </MainContainer>
     </div>
