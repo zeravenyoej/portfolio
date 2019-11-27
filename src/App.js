@@ -17,11 +17,10 @@ library.add(fab, faFilm, faCoffee, faGraduationCap, faArrowAltCircleUp, faCode, 
 function App() {
 
   const MainContainer = styled.div`
-    /* margin: auto; */
-    padding: 4%;
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: space-evenly; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
   return (

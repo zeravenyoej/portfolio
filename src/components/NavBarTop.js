@@ -7,14 +7,16 @@ const StyledNav = styled.div`
     font-family: 'Audiowide', cursive;
     background-color: #129e9e96;
     display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 2%;
+    width: 100%;
 `;
 
 const StyledP = styled.p`
     text-shadow: 1px 1px black;
-    box-shadow: 2px 2px black;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
 `;
 
 
@@ -29,22 +31,22 @@ function NavBarTop () {
             <Link to='/about'>
                 <FontAwesomeIcon icon="coffee" />
                 &nbsp;
-                About Me
+                <StyledP>About Me</StyledP>
             </Link>
             <Link to='/skills'>
                 <FontAwesomeIcon icon="code" />
                 &nbsp;
-                Skills
+                <StyledP>Skills</StyledP>
             </Link>
             <Link to='/projects'>
                 <FontAwesomeIcon icon="hammer" />
                 &nbsp;
-                Projects
+                <StyledP>Projects</StyledP>
             </Link>
             <Link to='/contact'>
                 <FontAwesomeIcon icon="phone" />
                 &nbsp;
-                Contact Me
+                <StyledP>Contact Me</StyledP>
             </Link>
         </StyledNav>
     );
