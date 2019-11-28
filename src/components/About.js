@@ -17,7 +17,7 @@ function About () {
     background: white;
     `;
 
-    const TextDiv = styled.div`
+    const OutterTextDiv = styled.div`
         border: 1px solid black;
         width: 50%;
         border-radius: 10px;
@@ -25,8 +25,16 @@ function About () {
         font-family: 'Literata', serif;
         padding: 3%;
         line-height: 1.8;
-        box-shadow: 2px 2px gray;
+        box-shadow: 2px 2px black;
         background: #ffffcc;
+    `;
+
+    const InnerTextDiv = styled.div`
+        background: #FAF9FA;
+        padding: 1%;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px grey;
     `;
 
     const ImgDiv = styled.div`
@@ -46,25 +54,27 @@ function About () {
             <NavBarTop/>
 
             <ContentDiv>
-                <TextDiv>
-                    <div>
-                    <p>Hello! My name is Joseph, but most people call me Joey. I am a full-stack web developer at Lambda School. 
-                    I can usually be found coding in a coffee shop, where I regularly contribute to robust web applications. 
-                    The marriage of creativity and syntactic detail in coding has breathed new life in my career in exciting ways. 
-                    You can read more about my transition in my blog.</p>
-                    </div>
-                    <div>
-                    <p>I have nine years of experience teaching English as a Foreign Language (ESL) in a variety of settings, 
-                    from community centers, to private language schools and universities. The majority of my students were 
-                    graduate and undergraduates, but I've also facilitated language learning with diplomats, visiting Harvard 
-                    scholars, adults on vacation, recent immigrants, and parents of students. Being able to work successfully 
-                    with diverse populations has been the pride of my career.</p>
-                    </div>
-                    <div>
-                    <p>When I'm not coding, I'm usually watching a movie, or reading or writing about one. I write short reviews 
-                    of every movie I watch on my Letterboxd account. If you'd like to know more about me, feel free to get in touch! </p>
-                    </div>
-                </TextDiv>
+                <OutterTextDiv>
+                    <InnerTextDiv>
+                        <div>
+                        <p>Hello! My name is Joseph, but most people call me Joey. I am a full-stack web developer at Lambda School. 
+                        I can usually be found coding in a coffee shop, where I regularly contribute to robust web applications. 
+                        The marriage of creativity and syntactic detail in coding has breathed new life in my career in exciting ways. 
+                        You can read more about my transition in my blog.</p>
+                        </div>
+                        <div>
+                        <p>I have nine years of experience teaching English as a Foreign Language (ESL) in a variety of settings, 
+                        from community centers, to private language schools and universities. The majority of my students were 
+                        graduate and undergraduates, but I've also facilitated language learning with diplomats, visiting Harvard 
+                        scholars, adults on vacation, recent immigrants, and parents of students. Being able to work successfully 
+                        with diverse populations has been the pride of my career.</p>
+                        </div>
+                        <div>
+                        <p>When I'm not coding, I'm usually watching a movie, or reading or writing about one. I write short reviews 
+                        of every movie I watch on my Letterboxd account. If you'd like to know more about me, feel free to get in touch! </p>
+                        </div>
+                    </InnerTextDiv>
+                </OutterTextDiv>
                 
                 <ImgDiv>
                     <Img src={joey} alt='Me in Hawaii' />
