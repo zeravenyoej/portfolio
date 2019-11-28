@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { directive } from '@babel/types';
-// import { faColumns } from '@fortawesome/free-solid-svg-icons';
-
 
 const StyledNav = styled.nav`
     display: flex;
@@ -12,7 +9,6 @@ const StyledNav = styled.nav`
     width: 100%;
 `;
 
-
 const StyledBttn = styled.button`
     padding: 4%;
     font-size: 1.5rem;
@@ -20,7 +16,6 @@ const StyledBttn = styled.button`
     background-color: #45A29E;
     color: white;
     text-shadow: 1px 1px black;
-    box-shadow: 2px 2px black;
     margin: 10px;
 `;
 

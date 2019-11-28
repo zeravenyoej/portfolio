@@ -12,41 +12,54 @@ const StyledNav = styled.div`
     width: 100%;
 `;
 
-const StyledP = styled.p`
-    text-shadow: 1px 1px black;
-    font-size: 1.3rem;
+const FlexDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: white;
-    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
 `;
+
 
 
 function NavBarTop () {
     return (
         <StyledNav>
             <Link to='/'>
-                <FontAwesomeIcon icon="arrow-alt-circle-up" />
-                &nbsp;
-                <StyledP>Home</StyledP>
-            </Link>
+                <FlexDiv>
+                    <FontAwesomeIcon icon="arrow-alt-circle-up" />
+                    &nbsp;&nbsp;
+                    Home
+                </FlexDiv>
+                </Link>
             <Link to='/about'>
-                <FontAwesomeIcon icon="coffee" />
-                &nbsp;
-                <StyledP>About Me</StyledP>
+                <FlexDiv>
+                    <FontAwesomeIcon icon="coffee" />
+                    &nbsp;
+                    About Me
+                </FlexDiv>
             </Link>
             <Link to='/skills'>
-                <FontAwesomeIcon icon="code" />
-                &nbsp;
-                <StyledP>Skills</StyledP>
+                <FlexDiv>
+                    <FontAwesomeIcon icon="code" />
+                    &nbsp;
+                    Skills
+                </FlexDiv>
             </Link>
             <Link to='/projects'>
-                <FontAwesomeIcon icon="hammer" />
-                &nbsp;
-                <StyledP>Projects</StyledP>
+                <FlexDiv>
+                    <FontAwesomeIcon icon="hammer" />
+                    &nbsp;
+                    Projects
+                </FlexDiv>
             </Link>
             <Link to='/contact'>
-                <FontAwesomeIcon icon="phone" />
-                &nbsp;
-                <StyledP>Contact Me</StyledP>
+                <FlexDiv>
+                    <FontAwesomeIcon icon="phone" />
+                    &nbsp;
+                    Contact Me
+                </FlexDiv>
             </Link>
         </StyledNav>
     );
