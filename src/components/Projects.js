@@ -1,13 +1,15 @@
 import React from 'react';
+import StyledDiv from './StyledDiv';
 import NavBarTop from './NavBarTop';
+
 
 
 function Projects () {
 
     return (
-        <div>
+        <StyledDiv>
             <NavBarTop/>
-        </div>
+        </StyledDiv>
     );
 };
 

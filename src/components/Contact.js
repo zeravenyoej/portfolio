@@ -1,13 +1,14 @@
 import React from 'react';
+import StyledDiv from './StyledDiv';
 import NavBarTop from './NavBarTop';
 
 
 function Contact () {
 
     return (
-        <div>
-        <NavBarTop/>
-    </div>
+        <StyledDiv>
+            <NavBarTop/>
+        </StyledDiv>
     );
 };
 

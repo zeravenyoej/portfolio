@@ -1,18 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import StyledDiv from './StyledDiv';
 import NavBarTop from './NavBarTop';
 import joey from '../images/joey.png'
 
 
 
 function About () {
-    
-    const AboutDiv = styled.div`
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
-    `;
 
     const ContentDiv = styled.div`
     display: flex;
@@ -48,7 +42,7 @@ function About () {
 
 
     return (
-        <AboutDiv>
+        <StyledDiv>
             <NavBarTop/>
 
             <ContentDiv>
@@ -77,7 +71,7 @@ function About () {
                 </ImgDiv>
             
             </ContentDiv>
-        </AboutDiv>
+        </StyledDiv>
         );
 };
 
