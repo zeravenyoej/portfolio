@@ -14,10 +14,9 @@ function About () {
     justify-content: space-between;
     align-items: center;
     margin-top: 3%;
-    background: white;
     `;
 
-    const OutterTextDiv = styled.div`
+    const OuterTextDiv = styled.div`
         border: 1px solid black;
         width: 50%;
         border-radius: 10px;
@@ -38,8 +37,10 @@ function About () {
     `;
 
     const ImgDiv = styled.div`
-        width: auto;
-        height: 100%;
+        /* width: auto; */
+        /* height: 100%; */
+        /* background: red; */
+
     `;
 
     const Img =styled.img`
@@ -54,13 +55,13 @@ function About () {
             <NavBarTop/>
 
             <ContentDiv>
-                <OutterTextDiv>
+                <OuterTextDiv>
                     <InnerTextDiv>
                         <div>
                         <p>Hello! My name is Joseph, but most people call me Joey. I am a full-stack web developer at Lambda School. 
                         I can usually be found coding in a coffee shop, where I regularly contribute to robust web applications. 
                         The marriage of creativity and syntactic detail in coding has breathed new life in my career in exciting ways. 
-                        You can read more about my transition in my blog.</p>
+                        You can read more about my transition in <a href='https://medium.com/@josephnevarez12'>my blog</a></p>
                         </div>
                         <div>
                         <p>I have nine years of experience teaching English as a Foreign Language (ESL) in a variety of settings, 
@@ -71,10 +72,10 @@ function About () {
                         </div>
                         <div>
                         <p>When I'm not coding, I'm usually watching a movie, or reading or writing about one. I write short reviews 
-                        of every movie I watch on my Letterboxd account. If you'd like to know more about me, feel free to get in touch! </p>
+                        of every movie I watch on <a href='https://www.letterboxd.com/zeravenyoej'>my Letterboxd account</a>. If you'd like to know more about me, feel free to get in touch! </p>
                         </div>
                     </InnerTextDiv>
-                </OutterTextDiv>
+                </OuterTextDiv>
                 
                 <ImgDiv>
                     <Img src={joey} alt='Me in Hawaii' />
