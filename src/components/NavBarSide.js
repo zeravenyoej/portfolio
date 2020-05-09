@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useHistory } from 'react-router-dom';
 
 const StyledNav = styled.nav`
     display: flex;
@@ -19,7 +20,9 @@ const StyledBttn = styled.button`
     margin: 10px;
 `;
 
-export default function NavBarSide ({history}) {
+export default function NavBarSide (props) {
+    const history = useHistory();
+    
     return (
         <StyledNav>
             <StyledBttn onClick={()=>history.push('/')}>

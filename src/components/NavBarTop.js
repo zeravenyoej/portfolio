@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -24,43 +24,34 @@ const FlexDiv = styled.div`
 
 
 function NavBarTop () {
+    const history = useHistory();
     return (
         <StyledNav>
-            <Link to='/'>
-                <FlexDiv>
-                    <FontAwesomeIcon icon="arrow-alt-circle-up" />
-                    &nbsp;&nbsp;
-                    Home
-                </FlexDiv>
-                </Link>
-            <Link to='/about'>
-                <FlexDiv>
-                    <FontAwesomeIcon icon="coffee" />
-                    &nbsp;
-                    About Me
-                </FlexDiv>
-            </Link>
-            <Link to='/skills'>
-                <FlexDiv>
-                    <FontAwesomeIcon icon="code" />
-                    &nbsp;
-                    Skills
-                </FlexDiv>
-            </Link>
-            <Link to='/projects'>
-                <FlexDiv>
-                    <FontAwesomeIcon icon="hammer" />
-                    &nbsp;
-                    Projects
-                </FlexDiv>
-            </Link>
-            <Link to='/contact'>
-                <FlexDiv>
-                    <FontAwesomeIcon icon="phone" />
-                    &nbsp;
-                    Contact Me
-                </FlexDiv>
-            </Link>
+            <FlexDiv onClick={()=>history.push("/")}>
+                <FontAwesomeIcon icon="arrow-alt-circle-up" />
+                &nbsp;&nbsp;
+                Home
+            </FlexDiv>
+            <FlexDiv onClick={()=>history.push("/about")}>
+                <FontAwesomeIcon icon="coffee" />
+                &nbsp;
+                About Me
+            </FlexDiv>
+            <FlexDiv onClick={()=>history.push("/skills")}>
+                <FontAwesomeIcon icon="code" />
+                &nbsp;
+                Skills
+            </FlexDiv>
+            <FlexDiv onClick={()=>history.push("/projects")}>
+                <FontAwesomeIcon icon="hammer" />
+                &nbsp;
+                Projects
+            </FlexDiv>
+            <FlexDiv onClick={()=>history.push("/contact")}>
+                <FontAwesomeIcon icon="phone" />
+                &nbsp;
+                Contact Me
+            </FlexDiv>
         </StyledNav>
     );
 }

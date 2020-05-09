@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import ME from '../images/ME.jpg';
 import NavBarSide from './NavBarSide';
@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Home () {
+    const history = useHistory();
 //***************** OUTTERMOST DIV ***************** */
 const HomeDiv = styled.div`
     display: flex;
@@ -33,6 +34,7 @@ const PhotoDiv = styled.div`
     background-repeat: no-repeat;
     height: auto;
     width: 30%;
+    border: 1px solid black;
     /* margin: auto; */
 `;
 
@@ -77,7 +79,8 @@ const H2 = styled.h2`
     return (
         <HomeDiv>
             <NavDiv>
-                <Route path='/' render={(props)=><NavBarSide {...props}/>}/>
+                <Route path='/'><NavBarSide/></Route>
+                {/* <Route path='/' render={(props)=><NavBarSide {...props}/>}/> */}
             </NavDiv>
 
             <PhotoDiv/>
@@ -93,7 +96,7 @@ const H2 = styled.h2`
                     <H2>Links</H2>
                     <a href='https://www.letterboxd.com/zeravenyoej'>letterboxd</a>
                     <a href='https://www.github.com/zeravenyoej'>GitHub</a>
-                    <a href='https://www.linkedin.com/in/joseph-nevarez/'>Linked In</a>
+                    <a href='https://www.linkedin.com/in/joseph-nevarez/'><FontAwesomeIcon icon={['fab', 'Linkedin']}/></a>
                     <a href='https://medium.com/@josephnevarez12'>Blog</a>
                 </LinkCont>
             </StyledHero>
