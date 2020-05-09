@@ -5,11 +5,11 @@ import NavBarTop from './NavBarTop';
 
 function Contact () {
 
-    return (
-        <StyledDiv>
-            <NavBarTop/>
-        </StyledDiv>
-    );
+  return (
+    <StyledDiv>
+      <NavBarTop/>
+    </StyledDiv>
+  );
 };
 
 export default Contact;

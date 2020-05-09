@@ -5,12 +5,11 @@ import NavBarTop from './NavBarTop';
 
 function Skills () {
 
-    return (
-        <StyledDiv>
-            <NavBarTop/>
-            
-        </StyledDiv>
-    );
+  return (
+    <StyledDiv>
+      <NavBarTop/>
+    </StyledDiv>
+  );
 };
 
 export default Skills;

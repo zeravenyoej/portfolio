@@ -5,9 +5,6 @@ import ME from '../images/ME.jpg';
 import NavBarSide from './NavBarSide';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
-
 function Home () {
     const history = useHistory();
 //***************** OUTTERMOST DIV ***************** */
@@ -51,7 +48,6 @@ const StyledHero = styled.div`
 `;
 
 //************************* CONTAINED WITH LINKS, INSIDE OF CONTAINER WITH TEXT */
-
 const LinkCont = styled.div`
     background-color: #C5C6C7;
     width: 80%;
@@ -76,32 +72,31 @@ const H2 = styled.h2`
     color: #12699e96;
 `;
 
-    return (
-        <HomeDiv>
-            <NavDiv>
-                <Route path='/'><NavBarSide/></Route>
-                {/* <Route path='/' render={(props)=><NavBarSide {...props}/>}/> */}
-            </NavDiv>
+  return (
+    <HomeDiv>
+      <NavDiv>
+        <Route path='/'><NavBarSide/></Route>
+      </NavDiv>
 
-            <PhotoDiv/>
+      <PhotoDiv/>
 
-            <StyledHero>
-                <div>
-                    <H1>Joseph Nevarez</H1> <br/> <br/>
-                    <hr></hr>
-                    <H2> Web Developer</H2>
-                </div>
+      <StyledHero>
+        <div>
+          <H1>Joseph Nevarez</H1> <br/> <br/>
+          <hr></hr>
+          <H2> Web Developer</H2>
+        </div>
 
-                <LinkCont>
-                    <H2>Links</H2>
-                    <a href='https://www.letterboxd.com/zeravenyoej'>letterboxd</a>
-                    <a href='https://www.github.com/zeravenyoej'>GitHub</a>
-                    <a href='https://www.linkedin.com/in/joseph-nevarez/'><FontAwesomeIcon icon={['fab', 'Linkedin']}/></a>
-                    <a href='https://medium.com/@josephnevarez12'>Blog</a>
-                </LinkCont>
-            </StyledHero>
-        </HomeDiv>
-    );
+        <LinkCont>
+          <H2>Links</H2>
+          <a href='https://www.letterboxd.com/zeravenyoej'>letterboxd</a>
+          <a href='https://www.github.com/zeravenyoej'>GitHub</a>
+          <a href='https://www.linkedin.com/in/joseph-nevarez/'><FontAwesomeIcon icon={['fab', 'Linkedin']}/></a>
+          <a href='https://medium.com/@josephnevarez12'>Blog</a>
+        </LinkCont>
+      </StyledHero>
+    </HomeDiv>
+  );
 };
 
 export default Home;
