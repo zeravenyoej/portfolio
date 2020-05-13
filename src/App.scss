@@ -8,6 +8,35 @@
 
 .App {
   text-align: center;
-  
+  padding: 2%;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .mainContainer {
+    width: 44%;
+    height: 400px;
+    margin: 2.5%;
+    background-size: cover;
+
+    .mainTextDiv {
+      padding: 25%;
+      height: inherit;
+    }
+  }
+}
+
+.mainAboutImage {
+  background: url("../src/images/hawaii.jpg");
+}
+
+.mainProjectImage {
+  background-image: url("../src/images/SignLingoLg.png");
+}
+
+.mainSkillsImage {
+  background: url("../src/images/community.jpg")
+}

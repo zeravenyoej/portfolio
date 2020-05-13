@@ -12,31 +12,31 @@ function Home () {
     <main>
       <div
         onMouseEnter={()=>setContactShown(false)}
-        onMouseLeave={()=>setContactShown(true)}
-        onClick={()=>history.push("/contact")}>
+        onMouseOut={()=>setContactShown(true)}
+        onClick={()=>history.push("/contact")}
+        className="mainContainer">
+        
         {contactShown ? (
-          <div>
-            Joseph Nevarez
-            Software Engineer
+          <div className="mainTextDiv">
+            <h1>Joseph Nevarez</h1>
+              <hr/>
+            <h2>Software Engineer</h2>
           </div>
-        ) : (
-          <div>
-            Let's Connect
+          ) : (
+          <div className="mainTextDiv">
+            <h1>Let's Connect</h1>
           </div>
         )}
       </div>
 
       <div
         onMouseEnter={()=>setAboutShown(false)}
-        onMouseLeave={()=>setAboutShown(true)}
-        onClick={()=>history.push("/about")}>
-        {aboutShown ? (
-          <div>
-            pic of me
-          </div>
-        ) : (
-          <div>
-            ABOUT ME
+        onMouseOut={()=>setAboutShown(true)}
+        onClick={()=>history.push("/about")}
+        className={`mainContainer ${aboutShown ? "mainAboutImage" : null}`}>
+        {!aboutShown && (
+          <div className="mainTextDiv">
+            <h1>ABOUT ME</h1>
           </div>
         )}
       </div>
@@ -44,14 +44,11 @@ function Home () {
       <div
         onMouseEnter={()=>setProjectShown(false)}
         onMouseLeave={()=>setProjectShown(true)}
-        onClick={()=>history.push("/projects")}>
-        {projectShown ? (
-          <div>
-            pic of tripsplit
-          </div>
-        ) : (
-          <div>
-            PROJECTS
+        onClick={()=>history.push("/projects")}
+        className={`mainContainer ${projectShown ? "mainProjectImage" : null}`}>
+        {!projectShown && (
+          <div className="mainTextDiv">
+            <h1>PROJECTS</h1>
           </div>
         )}
       </div>
@@ -60,14 +57,11 @@ function Home () {
       <div
         onMouseEnter={()=>setSkillsShown(false)}
         onMouseLeave={()=>setSkillsShown(true)}
-        onClick={()=>history.push("/skills")}>
-        {skillsShown ? (
-          <div>
-            pic of community
-          </div>
-        ) : (
-          <div>
-            SKILLS
+        onClick={()=>history.push("/skills")}
+        className={`mainContainer ${skillsShown ? "mainSkillsImage" : null}`}>
+        {!skillsShown && (
+          <div className="mainTextDiv">
+            <h1>SKILLS</h1>
           </div>
         )}
       </div>
