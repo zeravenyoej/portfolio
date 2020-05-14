@@ -8,6 +8,7 @@ function Skills () {
   return (
   <>
    <NavBar/>
+   <h1 className="titleh1">tech skills I've aquired</h1>
   </>
   );
 };

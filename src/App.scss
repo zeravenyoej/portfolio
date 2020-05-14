@@ -11,6 +11,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.titleh1 {
+  font-size: 2.4rem;
+  font-family: 'Bowlby One', cursive;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +72,46 @@ nav {
   .shrink {
     transition: all .2s ease-in-out;
     transform: scale(1.0);
+  }
+}
+
+.contactDiv {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    margin: 8%;
+    width: 100px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  
+  #aboutImage {
+    width: 500px;
+    height: 628px;
+    background: url("../src/images/CityMe.png");
+    margin: 5% 5% 5% 20%;
+  }
+
+  #aboutText {
+    width: 500px;
+    padding: 4%;
+    border-left: 1px solid black;
+    margin-top: 5%;
+    margin-bottom: 20%;
   }
 }
 

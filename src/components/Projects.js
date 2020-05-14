@@ -16,6 +16,7 @@ function Projects () {
   return (
     <>
       <NavBar/>
+      <h1 className="titleh1">projects I've worked on</h1>
 
       <div className="projects">
         <section>
