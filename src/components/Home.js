@@ -31,7 +31,7 @@ function Home () {
 
       <div
         onMouseEnter={()=>setAboutShown(false)}
-        onMouseOut={()=>setAboutShown(true)}
+        onMouseLeave={()=>setAboutShown(true)}
         onClick={()=>history.push("/about")}
         className={`mainContainer ${aboutShown ? "mainAboutImage" : null}`}>
         {!aboutShown && (

@@ -18,13 +18,21 @@ main {
 
   .mainContainer {
     width: 44%;
-    height: 400px;
+    height: 500px;
     margin: 2.5%;
     background-size: cover;
 
     .mainTextDiv {
-      padding: 25%;
+      padding: 30%;
       height: inherit;
+
+      h1 {
+        font-family: 'Bowlby One', cursive;
+        font-size: 3rem;
+      }
+      h2 {
+        font-family: 'Open Sans', sans-serif;
+      }
     }
   }
 }
