@@ -12,18 +12,18 @@ function Home () {
     <main>
       <div
         onMouseEnter={()=>setContactShown(false)}
-        onMouseOut={()=>setContactShown(true)}
+        onMouseLeave={()=>setContactShown(true)}
         onClick={()=>history.push("/contact")}
         className="mainContainer">
-        
+
         <div className="mainTextDiv">
           {contactShown ? (
-            <> 
+            <>
               <h1>Joseph Nevarez</h1>
                 <hr/>
               <h2>Software Engineer</h2>
             </>
-          ) : (
+            ) : (
             <h1>Let's connect</h1>
           )}
         </div>
@@ -52,7 +52,6 @@ function Home () {
           </div>
         )}
       </div>
-
 
       <div
         onMouseEnter={()=>setSkillsShown(false)}

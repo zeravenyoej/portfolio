@@ -9,12 +9,18 @@
 .App {
   text-align: center;
   padding: 2%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  scroll-behavior: smooth;
 
   .mainContainer {
     width: 44%;
@@ -30,9 +36,6 @@ main {
         font-family: 'Bowlby One', cursive;
         font-size: 3rem;
       }
-      h2 {
-        font-family: 'Open Sans', sans-serif;
-      }
     }
   }
 }
@@ -47,4 +50,17 @@ main {
 
 .mainSkillsImage {
   background: url("../src/images/community.jpg")
+}
+
+nav {
+  scroll-behavior: smooth;
+  float: left;
+  margin-top: 10%;
+  padding-right: 3%;
+  border-right: 1px solid black;
+
+  p {
+    margin: 70% 10%;
+    font-size: 1.1rem;
+  }
 }
