@@ -1,15 +1,13 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import NavCard from './NavCard';
 
 const NavBar = () => {
-  const history = useHistory();
+  const data = ['home', 'about', 'projects', 'skills', 'contact']
   return (
     <nav>
-      <p onClick={()=>history.push('/')}>home</p>
-      <p onClick={()=>history.push('/about')}>about</p>
-      <p onClick={()=>history.push('/projects')}>projects</p>
-      <p onClick={()=>history.push('/skills')}>skills</p>
-      <p onClick={()=>history.push('/contact')}>contact</p>
+      {data.map((name)=>(
+        <NavCard name={name}/>
+      ))}
     </nav>
   );
 };

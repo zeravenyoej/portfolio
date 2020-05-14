@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/"><Home/></Route>
+          <Route exact path={["/", "/home"]}><Home/></Route>
           <Route path="/about"><About/></Route>
           <Route path="/skills"><Skills/></Route>
           <Route path="/projects"><Projects/></Route>

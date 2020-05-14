@@ -63,4 +63,14 @@ nav {
     margin: 70% 10%;
     font-size: 1.1rem;
   }
+
+  .grow {
+    transition: all .2s ease-in-out;
+    transform: scale(1.4);
+  }
+
+  .shrink {
+    transition: all .2s ease-in-out;
+    transform: scale(1.0);
+  }
 }
