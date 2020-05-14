@@ -7,9 +7,9 @@ function Home () {
     const [aboutShown, setAboutShown] = useState(true);
     const [projectShown, setProjectShown] = useState(true);
     const [skillsShown, setSkillsShown] = useState(true);
-
+    
   return (
-    <main>
+    <main>  
       <div
         onMouseEnter={()=>setContactShown(false)}
         onMouseLeave={()=>setContactShown(true)}
