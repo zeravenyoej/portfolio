@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-            <Route exact path="/"><Home/></Route>
-            <Route path="/about"><About/></Route>
-            <Route path="/skills"><Skills/></Route>
-            <Route path="/projects"><Projects/></Route>
-            <Route path="/contact"><Contact/></Route>
+          <Route exact path="/"><Home/></Route>
+          <Route path="/about"><About/></Route>
+          <Route path="/skills"><Skills/></Route>
+          <Route path="/projects"><Projects/></Route>
+          <Route path="/contact"><Contact/></Route>
         </Switch>
       </BrowserRouter>
     </div>

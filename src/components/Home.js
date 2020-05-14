@@ -16,17 +16,17 @@ function Home () {
         onClick={()=>history.push("/contact")}
         className="mainContainer">
         
-        {contactShown ? (
-          <div className="mainTextDiv">
-            <h1>Joseph Nevarez</h1>
-              <hr/>
-            <h2>Software Engineer</h2>
-          </div>
+        <div className="mainTextDiv">
+          {contactShown ? (
+            <> 
+              <h1>Joseph Nevarez</h1>
+                <hr/>
+              <h2>Software Engineer</h2>
+            </>
           ) : (
-          <div className="mainTextDiv">
-            <h1>Let's Connect</h1>
-          </div>
-        )}
+            <h1>Let's connect</h1>
+          )}
+        </div>
       </div>
 
       <div

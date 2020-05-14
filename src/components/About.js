@@ -1,10 +1,12 @@
 import React from 'react';
+import NavBar from './NavBar';
 
 
 function About () {
 
   return (
    <>
+   <NavBar/>
                 <div>
                 <p>Hello! My name is Joseph, but most people call me Joey. I am a full-stack web developer at Lambda School. 
                 I can usually be found coding in a coffee shop, where I regularly contribute to robust web applications. 
