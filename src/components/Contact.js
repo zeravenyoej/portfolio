@@ -20,7 +20,7 @@ function Contact () {
   return (
     <>
       <NavBar/>
-      <h1 className="titleh1">Contact Me</h1>
+      <h1 className="titleh1">contact me</h1>
 
         <section className="contactDiv"> 
           <div
