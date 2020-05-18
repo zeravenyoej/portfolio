@@ -14,6 +14,20 @@
 .titleh1 {
   font-size: 2.4rem;
   font-family: 'Bowlby One', cursive;
+  border-bottom: 1px solid black;
+  width: 33%;
+}
+
+.aboutTitle {
+  margin-left: 22%;
+}
+
+.projecth1 {
+  margin-left: 60%;
+}
+
+.skillsTitle {
+  margin-left: 35%;
 }
 
 main {
@@ -85,12 +99,16 @@ nav {
   flex-wrap: wrap;
 
   div {
-    margin: 8%;
+    margin:  4% 10%;
     width: 100px;
 
     a {
       text-decoration: none;
       color: black;
+
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -116,16 +134,24 @@ nav {
 }
 
 .projects {
-  margin: 5% 35% 5% 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  #signLingo {
+    margin: 5% 30% 3% 0;
+  }
+
+  #personalProject {
+    margin-left: 40%;
+  }
 
   section {
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
+
     
     .projectCard {
       position: relative;

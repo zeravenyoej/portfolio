@@ -30,14 +30,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={linkedInImg} alt="linkedIn icon"/>
-              {linkedIn && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>Linked In</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={linkedIn}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my Linked In profile</p>
+                </>
+              </Fade>
             </a>
           </div>
 
@@ -48,14 +46,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={resumeImg} alt="resume icon"/>
-              {resume && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>resume</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={resume}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my resume</p>
+                </>
+              </Fade>
             </a>
           </div>
 
@@ -66,14 +62,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={mediumImg} alt="Medium icon"/>
-              {medium && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>Medium</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={medium}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my blog</p>
+                </>
+              </Fade>
             </a>
           </div>
 
@@ -84,14 +78,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={githubImg} alt="GitHub icon"/>
-              {gitHub && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>GitHub</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={gitHub}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my GitHub account</p>
+                </>
+              </Fade>
             </a>
           </div>
 
@@ -102,14 +94,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={movieImg} alt="Movie icon"/>
-              {movie && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>movie reviews</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={movie}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my movie reviews</p>
+                </>
+              </Fade>
             </a>
           </div>
 
@@ -120,14 +110,12 @@ function Contact () {
               target="_blank"
               href="https://www.google.com">
               <img src={emailImg} alt="Email icon"/>
-              {email && (
-                <Fade top>
-                  <>
-                    <img src={down} alt="down arrow"/>
-                    <p>email</p>
-                  </>
-                </Fade>
-              )}
+              <Fade top opposite when={email}>
+                <>
+                  <img src={down} alt="down arrow"/>
+                  <p>my email</p>
+                </>
+              </Fade>
             </a>
           </div>
 

@@ -1,17 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from './NavBar';
+import { Fade, LightSpeed } from 'react-reveal'
 
 
 function About () {
+  const [showContent, setShowContent] = useState(false);
+  const [showTitle, setShowTitle] = useState(false);
+
+  useEffect(()=>{
+    const titleTimer = setTimeout(()=>{
+      setShowTitle(true)
+    }, 800);
+    
+    const contentTimer = setTimeout(()=>{
+      setShowContent(true)
+    }, 500);
+    
+    return () => {
+      clearTimeout(titleTimer)
+      clearTimeout(contentTimer)
+    }
+  },[])
 
   return (
     <>
       <NavBar/>
-      <h1 className="titleh1">about me</h1>
+
+      <LightSpeed right when={showTitle}>
+        <h1 className="titleh1 aboutTitle">about me</h1>
+      </LightSpeed>
 
       <div className="about">
-        <div id="aboutImage"></div>
-        <div id="aboutText">Fugiat ullamco aliqua excepteur tempor. Ea et culpa cillum enim est aute ad commodo ut. Enim officia 
+        <Fade top when={showContent}>
+          <div id="aboutImage"></div>
+        </Fade>
+        <Fade bottom when={showContent}>
+          <div id="aboutText">Fugiat ullamco aliqua excepteur tempor. Ea et culpa cillum enim est aute ad commodo ut. Enim officia 
             est nisi labore. Irure minim exercitation mollit laborum anim officia ut id fugiat.
             Aliqua ipsum amet nulla incididunt cillum consectetur incididunt. Adipisicing occaecat nisi non eiusmod 
             tempor reprehenderit eiusmod ut amet exercitation aute sunt do. Deserunt ut ad reprehenderit qui voluptate 
@@ -21,6 +45,7 @@ function About () {
             Voluptate nisi veniam incididunt id non et ipsum exercitation ex commodo cillum. Quis excepteur dolore reprehenderit 
             in dolor pariatur irure enim esse proident.
           </div>
+        </Fade>
       </div>
     </>
   );

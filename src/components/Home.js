@@ -24,7 +24,7 @@ function Home () {
               <h2>Software Engineer</h2>
             </>
             ) : (
-            <h1>Let's connect</h1>
+            <h1>LET'S CONNECT</h1>
           )}
         </div>
       </div>
