@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTransition, animated } from 'react-spring';
 import { useHistory } from 'react-router-dom';
 import ReactCardFlip from 'react-card-flip';
 import NavBar from './NavBar';
@@ -11,12 +12,26 @@ function Projects () {
   const [signFlipped, setSignFlipped] = useState(false);
   const [personalFlipped, setPersonalFlipped] = useState(false);
 
+  const [show, setShow] = useState(false);
+
+  useEffect (()=> {
+    setTimeout(setShow(true), 1000)
+  }, []);
+
+  const transitions = useTransition(show, null, {
+    from: { opacity: 0 },
+    entering: { opacity: 1 },
+    leaving: { opacity: 0 }
+  })
+
 
 
   return (
     <>
       <NavBar/>
-      <h1 className="titleh1">projects I've worked on</h1>
+      <div>
+      {transitions.map(({props}) => show && <animated.h1 style={props} className="titleh1">projects I've worked on</animated.h1>)}
+      
 
       <div className="projects">
         <section>
@@ -72,6 +87,7 @@ function Projects () {
           </div>
 
         </section>
+      </div>
       </div>
     </>
   );

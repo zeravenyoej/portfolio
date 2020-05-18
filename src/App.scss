@@ -170,17 +170,20 @@ nav {
     margin: 3%;
     border-radius: 15px;
     border: 1px solid black;
-    width: 175px;
+    width: 225px;
     color: black;
     font-size: 1.4rem;
     outline: none;
+    box-shadow: 5px 8px;
+    font-family: 'Bungee Inline', cursive;
+    
   }
   
   #frontButton {
     background-color: cornflowerblue;
   }
   #backButton {
-    background-color: darkkhaki;
+    background-color: rgb(85, 184, 4);
   }
   #stylingButton {
     background-color: darksalmon;
@@ -197,7 +200,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 2%;
+      margin: 3%;
       font-size: 1.3rem;
     }
 
@@ -214,8 +217,8 @@ nav {
     }
 
     .back {
-      background-color: darkkhaki;
-      border: 2px solid darkkhaki;
+      background-color:rgb(85, 184, 4);;
+      border: 2px solid rgb(85, 184, 4);;
       border-radius: 3px;
     }
 

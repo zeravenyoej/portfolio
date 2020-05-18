@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from './NavBar';
+// import { useTransition, animated } from 'react-spring';
 
 import reactImg from '../images/skills/react.png';
 import JavascriptImg from '../images/skills/JavaScript.png';
@@ -26,6 +27,12 @@ function Skills () {
   const [styling, setStyling] = useState(false);
 
   const [react, setReact] = useState(false);
+  // const transitionsReact = useTransition(react, null, {
+  //   from: { opacity: 0 },
+  //   enter: { opacity: 1 },
+  //   leave: { opacity: 0 }
+  // });
+
   const [javascript, setJavascript] = useState(false);
   const [sass, setSass] = useState(false);
   const [knex, setKnex] = useState(false);
@@ -44,24 +51,37 @@ function Skills () {
   const [sqlite, setSqlite] = useState(false);
   const [mongodb, setMongodb] = useState(false);
 
+
   return (
   <div className="skillsDiv">
     <NavBar/>
     <h1 className="titleh1">tech skills I've aquired</h1>
     <div className="skillButtons">
-        <button id="frontButton" onClick={()=>setFront(!front)}>Frontend  <br/> technologies</button>
-        <button id="backButton" onClick={()=>setBack(!back)}>Backend  <br/>technologies</button>
+        <button id="frontButton" onClick={()=>setFront(!front)}>Frontend <br/> technologies</button>
         <button id="stylingButton" onClick={()=>setStyling(!styling)}> Styling <br/> libraries</button>
+        <button id="backButton" onClick={()=>setBack(!back)}>Backend <br/>technologies</button>
     </div>
+
     <div className="skillsContent">
-
-
       <div 
         className={`skills ${front ? "front" : null}`}
         onMouseEnter={()=>setReact(true)}
         onMouseLeave={()=>setReact(false)}>
         {react ? <b> ReactJS</b> : <img src={reactImg} alt="React logo"/>}
       </div>
+
+      {/* <div 
+        className={`skills ${front ? "front" : null}`}
+        onMouseEnter={()=>setReact(true)}
+        onMouseLeave={()=>setReact(false)}>
+        {transitionsReact.map(({ props }) => 
+          react 
+            ? <animated.b style={props}>ReactJS</animated.b> 
+            : <animated.img stye={props} src={reactImg} alt="React logo"/>
+        )}
+      </div> */}
+
+    
 
       <div
         className={`skills ${front ? "front": null}`}
