@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from './NavBar';
-import Fade from 'react-reveal/Fade';
-import linkedInImg from '../images/linkedIn.png';
-import mediumImg from '../images/medium.png';
-import resumeImg from '../images/resume.png';
-import githubImg from '../images/githubLg.png';
-import movieImg from '../images/movie.png';
-import emailImg from '../images/email.png';
-import down from '../images/down.png';
+import { Rotate, Fade } from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown, faEnvelopeSquare, faCamera, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { Route } from 'react-router-dom';
 
 function Contact () {
   const [linkedIn, setLinkedIn] = useState(false);
@@ -16,109 +13,146 @@ function Contact () {
   const [gitHub, setGitHub] = useState(false);
   const [movie, setMovie] = useState(false);
   const [email, setEmail] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(()=>{
+    const content = setTimeout(()=>{
+      setShowContent(true)
+    }, 400)
+
+    return () => {
+      clearTimeout(content)
+    }
+  }, []);
 
   return (
     <>
       <NavBar/>
-      <h1 className="titleh1">contact me</h1>
+
+      <Fade left when={showContent}>
+        <h1 className="titleh1 contactTitle">contact me</h1>
+      </Fade>
 
         <section className="contactDiv"> 
-          <div
-            onMouseEnter={()=>setLinkedIn(true)}
-            onMouseLeave={()=>setLinkedIn(false)}>
-            <a 
-              target="_blank"
-              href="https://www.google.com">
-              <img src={linkedInImg} alt="linkedIn icon"/>
-              <Fade top opposite when={linkedIn}>
-                <>
-                  <img src={down} alt="down arrow"/>
-                  <p>my Linked In profile</p>
-                </>
-              </Fade>
-            </a>
-          </div>
+          <Rotate top left when={showContent}>
+            <div>
+              <a 
+                target="_blank"
+                href="https://www.linkedin.com/in/joseph-nevarez">
+                <FontAwesomeIcon 
+                  onMouseEnter={()=>setLinkedIn(true)}
+                  onMouseLeave={()=>setLinkedIn(false)}
+                  className="icon"
+                  icon={ faLinkedin }/>
+                <Fade top opposite when={linkedIn}>
+                  <>
+                    <FontAwesomeIcon icon={ faChevronDown}/>
+                    <p>my Linked In profile</p>
+                  </>
+                </Fade>
+              </a>
+            </div>
+          </Rotate>
 
-          <div
-            onMouseEnter={()=>setResume(true)}
-            onMouseLeave={()=>setResume(false)}>
-            <a 
-              target="_blank"
-              href="https://www.google.com">
-              <img src={resumeImg} alt="resume icon"/>
-              <Fade top opposite when={resume}>
-                <>
-                  <img src={down} alt="down arrow"/>
-                  <p>my resume</p>
-                </>
-              </Fade>
-            </a>
-          </div>
+          <Fade top when={showContent}>
+            <div>
+              <a 
+                target="_blank"
+                href="https://www.google.com">
+                <FontAwesomeIcon 
+                  onMouseEnter={()=>setResume(true)}
+                  onMouseLeave={()=>setResume(false)}
+                  className="icon" 
+                  icon={ faFileAlt }/>
+                <Fade top opposite when={resume}>
+                  <>
+                    <FontAwesomeIcon icon={ faChevronDown}/>
+                    <p>my resume</p>
+                  </>
+                </Fade>
+              </a>
+              </div>
+            </Fade>
 
-          <div
-            onMouseEnter={()=>setMedium(true)}
-            onMouseLeave={()=>setMedium(false)}>
+        <Rotate top right when={showContent}>
+          <div>
             <a 
               target="_blank"
-              href="https://www.google.com">
-              <img src={mediumImg} alt="Medium icon"/>
+              href="https://medium.com/@josephnevarez12">
+              <FontAwesomeIcon 
+                onMouseEnter={()=>setMedium(true)}
+                onMouseLeave={()=>setMedium(false)}
+                className="icon" 
+                icon={ faMedium }/>
               <Fade top opposite when={medium}>
                 <>
-                  <img src={down} alt="down arrow"/>
+                  <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my blog</p>
                 </>
               </Fade>
             </a>
           </div>
+        </Rotate>
 
-          <div
-            onMouseEnter={()=>setGitHub(true)}
-            onMouseLeave={()=>setGitHub(false)}>
-            <a 
+        <Rotate bottom right when={showContent}>
+          <div>
+            <a
               target="_blank"
-              href="https://www.google.com">
-              <img src={githubImg} alt="GitHub icon"/>
+              href="https://github.com/zeravenyoej">
+              <FontAwesomeIcon 
+                onMouseEnter={()=>setGitHub(true)}
+                onMouseLeave={()=>setGitHub(false)} 
+                className="icon" 
+                icon={ faGithubSquare }/>
               <Fade top opposite when={gitHub}>
                 <>
-                  <img src={down} alt="down arrow"/>
+                  <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my GitHub account</p>
                 </>
               </Fade>
             </a>
           </div>
+        </Rotate>
 
-          <div
-            onMouseEnter={()=>setMovie(true)}
-            onMouseLeave={()=>setMovie(false)}>
+        <Fade bottom when={showContent}>
+          <div>
             <a 
               target="_blank"
-              href="https://www.google.com">
-              <img src={movieImg} alt="Movie icon"/>
+              href="https://letterboxd.com/zeravenyoej/">
+              <FontAwesomeIcon 
+                onMouseEnter={()=>setMovie(true)}
+                onMouseLeave={()=>setMovie(false)}
+                className="icon" 
+                icon={ faCamera }/>
               <Fade top opposite when={movie}>
                 <>
-                  <img src={down} alt="down arrow"/>
+                  <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my movie reviews</p>
                 </>
               </Fade>
             </a>
           </div>
+        </Fade>
 
-          <div
-            onMouseEnter={()=>setEmail(true)}
-            onMouseLeave={()=>setEmail(false)}>
+        <Rotate bottom left when={showContent}>
+          <div>
             <a 
               target="_blank"
-              href="https://www.google.com">
-              <img src={emailImg} alt="Email icon"/>
+              href="mailto:josephnevarez12@gmail.com">
+              <FontAwesomeIcon 
+                onMouseEnter={()=>setEmail(true)}
+                onMouseLeave={()=>setEmail(false)}
+                className="icon" 
+                icon={ faEnvelopeSquare }/>
               <Fade top opposite when={email}>
                 <>
-                  <img src={down} alt="down arrow"/>
-                  <p>my email</p>
+                  <FontAwesomeIcon icon={ faChevronDown}/>
+                  <p>joseph<br/>nevarez12<br/>@gmail.com</p>
                 </>
               </Fade>
             </a>
           </div>
-
+        </Rotate>
         </section>
     </>
   )

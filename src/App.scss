@@ -23,11 +23,15 @@
 }
 
 .projecth1 {
-  margin-left: 60%;
+  margin-left: 35%;
 }
 
 .skillsTitle {
   margin-left: 35%;
+}
+
+.contactTitle {
+  margin-left: 15%;
 }
 
 main {
@@ -93,14 +97,21 @@ nav {
   display: flex;
   // flex-direction: column;
   justify-content: center;
+  margin-top: 5%;
   margin-left: 15%;
   align-self: center;
   display: flex;
   flex-wrap: wrap;
 
+  .icon {
+    width: inherit;
+    height: inherit;
+  }
+
   div {
-    margin:  4% 10%;
-    width: 100px;
+    margin:  1% 10%;
+    width: 115px;
+    height: auto;
 
     a {
       text-decoration: none;
@@ -133,59 +144,64 @@ nav {
   }
 }
 
-.projects {
+.projectsMainDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  margin-left: 25%;
 
-  #signLingo {
-    margin: 5% 30% 3% 0;
-  }
-
-  #personalProject {
-    margin-left: 40%;
-  }
-
-  section {
+  .projects {
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    // margin-bottom: 10%;
-
-    
-    .projectCard {
-      position: relative;
-      height: 500px;
-      width: inherit;
-      
-      img {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-      }
-
-      .projectCardWithImage {
-        background: url('../src/images/SignLingo.png');
-        height: inherit;
-      }
-    }
-
-    .projectsUnderCard {
+    flex-direction: row;
+    margin: 5%;
+  
+    section {
       display: flex;
       flex-direction: column;
-      align-items: center;
-
-      h1 {
-        font-size: 2.5rem;
-        margin: 2% 0;
-      }  
-
-      .projectLinks {
-        display: flex;
-        justify-content: space-evenly;
-        width: 75%;
+      width: 300px;
+      
+      // #signLingo {
+      //   margin: 5% 30% 3% 0;
+      //   margin-left: 5%;
+      // }
+    
+      // #personalProject {
+      //   margin-left: 40%;
+      // }
+      
+      .projectCard {
+        position: relative;
+        height: 500px;
+        width: inherit;
+        
+        img {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+        }
+  
+        .projectCardWithImage {
+          background: url('../src/images/SignLingo.png');
+          height: inherit;
+        }
       }
-    }    
+  
+      .projectsUnderCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h1 {
+          font-size: 2.5rem;
+          margin: 2% 0;
+        }  
+  
+        .projectLinks {
+          display: flex;
+          justify-content: space-evenly;
+          width: 75%;
+        }
+      }    
+    }
   }
 }
 
