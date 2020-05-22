@@ -4,7 +4,6 @@ import { Rotate, Fade } from 'react-reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown, faEnvelopeSquare, faCamera, faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import { Route } from 'react-router-dom';
 
 function Contact () {
   const [linkedIn, setLinkedIn] = useState(false);
@@ -42,13 +41,13 @@ function Contact () {
                 <FontAwesomeIcon 
                   onMouseEnter={()=>setLinkedIn(true)}
                   onMouseLeave={()=>setLinkedIn(false)}
-                  className="icon"
+                  className="icon linkedIn"
                   icon={ faLinkedin }/>
                 <Fade top opposite when={linkedIn}>
-                  <>
+                  <div className="drop">
                     <FontAwesomeIcon icon={ faChevronDown}/>
                     <p>my Linked In profile</p>
-                  </>
+                  </div>
                 </Fade>
               </a>
             </div>
@@ -58,17 +57,17 @@ function Contact () {
             <div>
               <a 
                 target="_blank"
-                href="https://www.google.com">
+                href="">
                 <FontAwesomeIcon 
                   onMouseEnter={()=>setResume(true)}
                   onMouseLeave={()=>setResume(false)}
-                  className="icon" 
+                  className="icon resume" 
                   icon={ faFileAlt }/>
                 <Fade top opposite when={resume}>
-                  <>
+                  <div className="drop">
                     <FontAwesomeIcon icon={ faChevronDown}/>
                     <p>my resume</p>
-                  </>
+                  </div>
                 </Fade>
               </a>
               </div>
@@ -82,13 +81,13 @@ function Contact () {
               <FontAwesomeIcon 
                 onMouseEnter={()=>setMedium(true)}
                 onMouseLeave={()=>setMedium(false)}
-                className="icon" 
+                className="icon blog" 
                 icon={ faMedium }/>
               <Fade top opposite when={medium}>
-                <>
+                <div className="drop">
                   <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my blog</p>
-                </>
+                </div>
               </Fade>
             </a>
           </div>
@@ -99,16 +98,16 @@ function Contact () {
             <a
               target="_blank"
               href="https://github.com/zeravenyoej">
-              <FontAwesomeIcon 
+              <FontAwesomeIcon
                 onMouseEnter={()=>setGitHub(true)}
                 onMouseLeave={()=>setGitHub(false)} 
-                className="icon" 
+                className="icon gitHub" 
                 icon={ faGithubSquare }/>
               <Fade top opposite when={gitHub}>
-                <>
+                <div className="drop">
                   <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my GitHub account</p>
-                </>
+                </div>
               </Fade>
             </a>
           </div>
@@ -122,13 +121,13 @@ function Contact () {
               <FontAwesomeIcon 
                 onMouseEnter={()=>setMovie(true)}
                 onMouseLeave={()=>setMovie(false)}
-                className="icon" 
+                className="icon letterboxd" 
                 icon={ faCamera }/>
               <Fade top opposite when={movie}>
-                <>
+                <div className="drop">
                   <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>my movie reviews</p>
-                </>
+                </div>
               </Fade>
             </a>
           </div>
@@ -142,13 +141,13 @@ function Contact () {
               <FontAwesomeIcon 
                 onMouseEnter={()=>setEmail(true)}
                 onMouseLeave={()=>setEmail(false)}
-                className="icon" 
+                className="icon email" 
                 icon={ faEnvelopeSquare }/>
               <Fade top opposite when={email}>
-                <>
+                <div className="drop">
                   <FontAwesomeIcon icon={ faChevronDown}/>
                   <p>joseph<br/>nevarez12<br/>@gmail.com</p>
-                </>
+                </div>
               </Fade>
             </a>
           </div>

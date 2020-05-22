@@ -1,38 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Slide, Bounce } from 'react-reveal';
-import { useHistory } from 'react-router-dom';
 import ReactCardFlip from 'react-card-flip';
 import NavBar from './NavBar';
 import flipArrow from '../images/flipArrow.png';
-import github from '../images/github.png';
 import internet from '../images/internet.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Projects () {
-  const history = useHistory();
   const [signFlipped, setSignFlipped] = useState(false);
   const [personalFlipped, setPersonalFlipped] = useState(false);
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect (() => {
-    const contentTimer = setTimeout(()=>{
-      setShowContent(true)
-    }, 500)
-    
-    return () => {
-      clearTimeout(contentTimer)
-    }
-  }, []);
 
   return (
     <>
       <NavBar/>
 
-      <Bounce top when={showContent}> 
+      <Bounce top> 
         <h1 className={`titleh1 projecth1`} >projects I've worked on</h1> 
       </Bounce>
 
       <div className="projectsMainDiv">
-        <Slide left when={showContent}>
+        <Slide left >
           <div className="projects">
             <section id="signLingo projects">
               <ReactCardFlip isFlipped={signFlipped}>
@@ -42,27 +30,38 @@ function Projects () {
                   </div>
                 </div>
 
-                <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
-                    <img src={flipArrow} alt="flip arrow"/>
-                    <p>description of the project</p>
-                    <p>dates I worked on it</p>
-                    <p>what I did, specifically</p>
-                    <p>Tech used</p>
+                <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard textSide">
+                    <img src={flipArrow} alt="flip arrow"/> <br/> 
+                    <h3>A mobile-first, <br/>sign language learning platform</h3> <br/><hr/>
+                    <br/><strong>April-May 2020</strong> <br/> <br/> 
+                    <ul>
+                      <li>Built to the specifications of a client on a remote, cross-functional team of 24 over 8 weeks</li> <br/>
+                      <li>Contributed primarily as a front-end engineer, on the app's first team of web developers</li> <br/>
+                      <li>Tech used: React, Redux, Sass, Material UI, React Card Flip, Formik</li>
+                    </ul>
                 </div>
               </ReactCardFlip>
 
               <div className="projectsUnderCard">
                 <h1>SignLingo</h1>
                 <div className="projectLinks">
-                  <img src={github} alt="link to GitHub repo" onClick={()=>history.push("")}/>
-                  <img src={internet} alt="link to deployed site" onClick={()=>history.push("")}/>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Lambda-School-Labs/signlingo-fe">
+                    <FontAwesomeIcon className="link" icon={ faGithub }/>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://master.d2965nx2i7rdu0.amplifyapp.com">
+                    <img src={internet} className="link" alt="link to deployed site"/>
+                  </a>
                 </div>
               </div>
             </section>
           </div>
         </Slide>
 
-        <Slide right when={showContent}>
+        <Slide right >
           <div className="projects">
             <section id="personal projects">
               <ReactCardFlip isFlipped={personalFlipped}>
@@ -82,10 +81,18 @@ function Projects () {
               </ReactCardFlip>
 
               <div className="projectsUnderCard">
-                  <h1>Personal project</h1>
+                  <h1>Personal</h1>
                   <div className="projectLinks">
-                    <img src={github} alt="link to GitHub repo" onClick={()=>history.push("")}/>
-                    <img src={internet} alt="link to deployed site" onClick={()=>history.push("")}/>
+                    <a
+                      target="_blank"
+                      href="">
+                      <FontAwesomeIcon className="link" icon={ faGithub }/>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="">
+                      <img src={internet} className="link" alt="link to deployed site"/>
+                    </a>
                   </div>
                 </div>
             </section>
