@@ -5,15 +5,13 @@
   max-width: 100%;
 }
 
-$mobile: 500px;
-$tablet: 1025px;
-
 .App {
   text-align: center;
   padding: 2%;
   font-family: 'Open Sans', sans-serif;
 }
 
+@import "Variables";
 @import "Titles";
 @import "Main";
 @import "Nav";
