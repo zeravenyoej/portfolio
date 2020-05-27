@@ -1,0 +1,66 @@
+.projectsMainDiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25%;
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+  
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      
+      .textSide {
+        h3 {
+          text-align: center;
+        }
+        background: #c0ccd1;
+        padding: 0 10%;
+        text-align: left;
+      }
+
+      .projectCard {
+        position: relative;
+        height: 500px;
+        width: inherit;
+        
+        img {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+        }
+  
+        .projectCardWithImage {
+          background: url('../images/SignLingo.png');
+          height: inherit;
+        }
+      }
+  
+      .projectsUnderCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h1 {
+          font-size: 2.5rem;
+          margin: 2% 0;
+        }  
+  
+        .projectLinks {
+          display: flex;
+          justify-content: space-evenly;
+          width: 75%;
+        }
+
+        .link {
+          width: 50px;
+          height: 50px;
+          color: black;
+        }
+      }    
+    }
+  }
+}

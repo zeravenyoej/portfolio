@@ -1,0 +1,59 @@
+.contactDiv {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 15%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    width: inherit;
+    height: inherit;
+  }
+
+  .linkedIn {
+    color: #0e76a8;
+  }
+
+  .resume {
+    color: rgb(153, 35, 35);
+    height: 125px;
+  }
+
+  .blog {
+    color: #66CDAA;
+  }
+
+  .gitHub {
+    color: rgb(32, 34, 33);
+  }
+
+  .letterboxd {
+    color: #165530;
+  }
+
+  .email {
+    color: #8f58a5;
+  }
+
+  div {
+    margin:  1% 10%;
+    width: 115px;
+    height: auto;
+
+    .drop {
+      width: inherit;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

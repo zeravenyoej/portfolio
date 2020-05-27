@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import { Slide } from 'react-reveal';
 
@@ -44,19 +44,6 @@ function Skills () {
   const [npm, setNpm] = useState(false);
   const [sqlite, setSqlite] = useState(false);
   const [mongodb, setMongodb] = useState(false);
-
-  const [showTitle, setShowTitle] = useState(false);
-
-  useEffect(()=>{
-    const title = setTimeout(()=>{
-      setShowTitle(true)
-    }, 900)
-
-    return () => {
-      clearTimeout(title)
-    }
-  }, []);
-
 
   return (
     <>

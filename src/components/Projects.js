@@ -9,7 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Projects () {
   const [signFlipped, setSignFlipped] = useState(false);
-  const [personalFlipped, setPersonalFlipped] = useState(false);
+  // const [personalFlipped, setPersonalFlipped] = useState(false);
 
   return (
     <>
@@ -47,11 +47,13 @@ function Projects () {
                 <div className="projectLinks">
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/Lambda-School-Labs/signlingo-fe">
                     <FontAwesomeIcon className="link" icon={ faGithub }/>
                   </a>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://master.d2965nx2i7rdu0.amplifyapp.com">
                     <img src={internet} className="link" alt="link to deployed site"/>
                   </a>
@@ -61,7 +63,7 @@ function Projects () {
           </div>
         </Slide>
 
-        <Slide right >
+        {/* <Slide right >
           <div className="projects">
             <section id="personal projects">
               <ReactCardFlip isFlipped={personalFlipped}>
@@ -85,19 +87,23 @@ function Projects () {
                   <div className="projectLinks">
                     <a
                       target="_blank"
-                      href="">
+                      rel="noopener noreferrer"
+                      href=""
+                      >
                       <FontAwesomeIcon className="link" icon={ faGithub }/>
                     </a>
                     <a
                       target="_blank"
-                      href="">
+                      rel="noopener noreferrer"
+                      href=""
+                      >
                       <img src={internet} className="link" alt="link to deployed site"/>
                     </a>
                   </div>
                 </div>
             </section>
           </div>
-        </Slide>
+        </Slide> */}
       </div>
     </>
   );

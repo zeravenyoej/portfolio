@@ -37,6 +37,7 @@ function Contact () {
             <div>
               <a 
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/joseph-nevarez">
                 <FontAwesomeIcon 
                   onMouseEnter={()=>setLinkedIn(true)}
@@ -57,6 +58,7 @@ function Contact () {
             <div>
               <a 
                 target="_blank"
+                rel="noopener noreferrer"
                 href="">
                 <FontAwesomeIcon 
                   onMouseEnter={()=>setResume(true)}
@@ -77,6 +79,7 @@ function Contact () {
           <div>
             <a 
               target="_blank"
+              rel="noopener noreferrer"
               href="https://medium.com/@josephnevarez12">
               <FontAwesomeIcon 
                 onMouseEnter={()=>setMedium(true)}
@@ -97,6 +100,7 @@ function Contact () {
           <div>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/zeravenyoej">
               <FontAwesomeIcon
                 onMouseEnter={()=>setGitHub(true)}
@@ -117,6 +121,7 @@ function Contact () {
           <div>
             <a 
               target="_blank"
+              rel="noopener noreferrer"
               href="https://letterboxd.com/zeravenyoej/">
               <FontAwesomeIcon 
                 onMouseEnter={()=>setMovie(true)}
@@ -137,6 +142,7 @@ function Contact () {
           <div>
             <a 
               target="_blank"
+              rel="noopener noreferrer"
               href="mailto:josephnevarez12@gmail.com">
               <FontAwesomeIcon 
                 onMouseEnter={()=>setEmail(true)}
