@@ -3,7 +3,7 @@ import NavCard from './NavCard';
 import cuid from "cuid";
 
 const NavBar = () => {
-  const data = ['home', 'about', 'projects', 'skills', 'contact']
+  const data = ['home', 'about', 'projects', 'skills']
   return (
     <nav>
       {data.map((name)=>(

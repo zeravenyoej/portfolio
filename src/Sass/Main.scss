@@ -6,17 +6,101 @@ main {
 
   .mainContainer {
     width: 44%;
-    height: 500px;
+    height: 450px;
     margin: 2.5%;
     background-size: cover;
 
     .mainTextDiv {
-      padding: 30%;
+      padding: 15% 5%;
       height: inherit;
 
       h1 {
         font-family: 'Bowlby One', cursive;
-        font-size: 3rem;
+        font-size: 3.5rem;
+      }
+
+      hr {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 2%;
+      }
+
+      #iconsDiv {
+        display:flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        padding: 1.5%;
+        
+        a {
+          text-decoration: none;
+        }
+
+        .icon {
+          height: 55px;
+          width: 55px;
+          color: #1d1c1c;
+          transition: all 0.3s;
+        }
+
+        
+        .hide{
+          display: none;
+          color: black;
+          margin-top: -8px;
+        }
+        
+        p {
+          font-size: 0.8rem;
+          margin-top: -5px;
+          padding: 2%;
+          color: white;
+        }
+
+        .icon:hover + .hide {
+          display: block;
+        }
+
+        .linkedIn:hover, #linkedInArrow {
+          color:#0E76A8;
+        }
+        #linkedInP {
+          background-color: #0E76A8;
+        }
+
+        .github:hover, #githubArrow {
+          color:#a80e28;
+        }
+        #githubP {
+          background-color: #a80e28;
+        }
+
+        .medium:hover, #mediumArrow {
+          color:#66cdaa;
+        }
+        #mediumP {
+          background-color: #66cdaa;
+        }
+
+        .email:hover, #emailArrow {
+          color:#e4981f;
+        }
+        #emailP {
+          background-color: #e4981f;
+        }
+
+        .letterboxd:hover, #letterboxdArrow {
+          color:#23817c;
+        }
+        #letterboxdP {
+          background-color: #23817c;
+        }
+
+        .resume:hover, #resumeArrow {
+          color:#ca66cd;
+        }
+        #resumeP {
+          background-color: #ca66cd;
+        }
       }
     }
   }
