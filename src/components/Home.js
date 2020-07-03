@@ -3,29 +3,17 @@ import { useHistory } from 'react-router-dom';
 
 function Home () {
     const history = useHistory();
-    const [contactShown, setContactShown] = useState(true);
     const [aboutShown, setAboutShown] = useState(true);
     const [projectShown, setProjectShown] = useState(true);
     const [skillsShown, setSkillsShown] = useState(true);
     
   return (
     <main>  
-      <div
-        onMouseEnter={()=>setContactShown(false)}
-        onMouseLeave={()=>setContactShown(true)}
-        onClick={()=>history.push("/contact")}
-        className="mainContainer">
-
+      <div className="mainContainer">
         <div className="mainTextDiv">
-          {contactShown ? (
-            <>
-              <h1>Joseph Nevarez</h1>
-                <hr/>
-              <h2>Software Engineer</h2>
-            </>
-            ) : (
-            <h1>LET'S CONNECT</h1>
-          )}
+          <h1>Joseph Nevarez</h1>
+            <hr/>
+          <h2>Software Engineer</h2>
         </div>
       </div>
 
