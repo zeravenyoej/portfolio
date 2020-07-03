@@ -19,7 +19,7 @@ function Projects () {
         <h1 className={`titleh1 projecth1`} >projects I've worked on</h1> 
       </Bounce>
 
-      <div className="projectsMainDiv">
+      <div id="projectsMainDiv">
         <Slide left >
           <div className="projects">
             <section id="signLingo projects">

@@ -11,7 +11,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-@import "Variables";
+// @import "Variables";
 @import "Titles";
 @import "Main";
 @import "Nav";
@@ -19,3 +19,38 @@
 @import "About";
 @import "Projects";
 @import "Skills";
+
+//********************************* DESKTOP VIEW *****************************
+// everything Desktop should SHOW
+@media (min-width: 1025px) {
+
+}
+
+// everything Desktop should HIDE
+@media(max-width: 1025px) {
+
+}
+
+
+//********************************* TABLET VIEW ******************************
+// everything Tablet should SHOW
+@media (min-width: 1025px) {
+
+}
+
+// everything Tablet should HIDE
+@media(min-width: 500px) {
+
+}
+
+//******************************** MOBILE VIEW *******************************
+
+// everything Mobile should SHOW
+@media (min-width: 1025px) {
+
+}
+
+// everything Mobile should HIDE
+@media(min-width: 500px) {
+
+}

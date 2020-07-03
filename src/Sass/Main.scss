@@ -4,26 +4,11 @@ main {
   justify-content: space-evenly;
   scroll-behavior: smooth;
 
-  @media (max-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-  }
-
   .mainContainer {
     width: 44%;
     height: 500px;
     margin: 2.5%;
     background-size: cover;
-
-    @media (max-width: $mobile) {
-      width: 90%;
-      height: 225px;
-    }
-
-    @media (max-width: $tablet){
-      width: 90%;
-      height: 400px;
-    }
 
     .mainTextDiv {
       padding: 30%;

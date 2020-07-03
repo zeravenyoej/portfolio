@@ -4,30 +4,49 @@
   align-items: center;
 
   .skillButtons {
-    width: 100%;
-  }
-
-  button {
-    padding: 1.5%;
-    margin: 3%;
-    border-radius: 15px;
-    border: 1px solid black;
-    width: 225px;
-    color: black;
-    font-size: 1.4rem;
-    outline: none;
-    box-shadow: 5px 8px;
-    font-family: 'Bungee Inline', cursive;
-  }
+    width: 75%;
+    margin-left: 10%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    
+    button {
+      position: relative;
+      cursor: pointer;
+      opacity: 0.9;
+      padding: 1.5%;
+      border-radius: 15px;
+      border: 1px solid black;
+      width: 225px;
+      font-size: 1.4rem;
+      outline: none;
+      box-shadow: 8px 10px 10px 0;
+      font-family: 'Bungee Inline', cursive;
+      transition: all 0.2s;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    button:hover {
+      opacity: 1;
+    }
+    
+    button:active {
+      box-shadow: 4px 5px 5px 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+      transition: all 0.2s;
+    }
   
-  #frontButton {
-    background-color: cornflowerblue;
-  }
-  #backButton {
-    background-color: rgb(85, 184, 4);
-  }
-  #stylingButton {
-    background-color: darksalmon;
+    #frontButton {
+      background-color: #F65058FF;
+    }
+    #backButton {
+      background-color: #FBDE44FF;
+    }
+    #stylingButton {
+      background-color: rgb(77, 94, 129);
+    }
   }
 
   .skillsContent {
@@ -44,24 +63,20 @@
       margin: 3%;
       font-size: 1.3rem;
     }
-
+  
+    .front, .styling, .back {
+      transition: all 0.8s;
+      border-radius: 15px;
+    }
+    
     .front {
-      background-color: cornflowerblue;
-      border-radius: 2px solid cornflowerblue;
-      border-radius: 8px;
+      background-color: #F65058FF;
     }
-
     .styling {
-      background-color: darksalmon;
-      border: 2px solid darksalmon;
-      border-radius: 8px;
+      background-color: rgb(77, 94, 129);
     }
-
     .back {
-      background-color:rgb(85, 184, 4);;
-      border: 2px solid rgb(85, 184, 4);;
-      border-radius: 3px;
+      background-color: #FBDE44FF;
     }
-
   }
 }
