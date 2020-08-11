@@ -11,46 +11,38 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-// @import "Variables";
+
 @import "Titles";
-@import "Main";
+@import "Home";
+@import "HomeTablet";
 @import "Nav";
-@import "Contact";
 @import "About";
 @import "Projects";
 @import "Skills";
 
-//********************************* DESKTOP VIEW *****************************
-// everything Desktop should SHOW
-@media (min-width: 1025px) {
 
+@media (max-width: 1025px) {
+  #homeDesktop, #aboutDesktop, #projectsDesktop, #skillsDesktop {
+    display: none;
+  }
 }
 
-// everything Desktop should HIDE
-@media(max-width: 1025px) {
-
+@media (min-width: 1025px){
+  #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
+    display: none;
+  }
 }
 
-
-//********************************* TABLET VIEW ******************************
-// everything Tablet should SHOW
-@media (min-width: 1025px) {
-
+@media (min-width: 1px) and (max-width: 499px) {
+   #aboutTablet, #projectsTablet, #skillsTablet {
+//   #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
+    display: none;
+  }
 }
 
-// everything Tablet should HIDE
-@media(min-width: 500px) {
-
-}
-
-//******************************** MOBILE VIEW *******************************
-
-// everything Mobile should SHOW
-@media (min-width: 1025px) {
-
-}
-
-// everything Mobile should HIDE
-@media(min-width: 500px) {
-
+@media (min-width: 500px) {
+    #aboutMobile, #projectsMobile, #skillsMobile {
+//   #homeMobile, #aboutMobile, #projectsMobile, #skillsMobile {
+    display: none;
+  }
 }

@@ -63,6 +63,7 @@ main {
         .linkedIn:hover, #linkedInArrow {
           color:#0E76A8;
         }
+        
         #linkedInP {
           background-color: #0E76A8;
         }
@@ -116,4 +117,8 @@ main {
 
 .mainSkillsImage {
   background: url("../images/community.jpg")
+}
+
+.tabletView {
+  display: flex;
 }
