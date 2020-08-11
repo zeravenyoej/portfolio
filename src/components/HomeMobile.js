@@ -7,17 +7,17 @@ import { faCaretDown, faEnvelopeSquare, faCamera, faFileAlt } from '@fortawesome
 
 
 
-const HomeTablet = () => {
+const HomeMobile = () => {
     const history = useHistory();
 
     return (
-        <div id="homeTablet">
-            <div className="mainContentTablet">
+        <div id="homeMobile">
+            <div className="mainContentMobile">
                 <h1>Joseph Nevarez</h1>
                     <hr/>
                 <h2>Software Engineer</h2>
 
-                <div id="iconsDivTablet">
+                <div id="iconsDivMobile">
                     <a target="_blank" className="linkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/joseph-nevarez">
                         <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                         <FontAwesomeIcon icon={faCaretDown}/>
@@ -60,29 +60,29 @@ const HomeTablet = () => {
 
             <div 
                 onClick={()=>history.push("/about")}
-                className="mainContentTablet"
+                className="mainContentMobile"
                 >
                 <h1>ABOUT ME</h1>
-                <div id="mainAboutImageTablet"></div>
+                <div id="mainAboutImageMobile"></div>
             </div>
 
             <div 
                 onClick={()=>history.push("/projects")}
-                className="mainContentTablet"
+                className="mainContentMobile"
                 >
                 <h1>PROJECTS</h1>
-                <div id="mainProjectImageTablet"></div>
+                <div id="mainProjectImageMobile"></div>
             </div>
 
             <div 
                 onClick={()=>history.push("/skills")}
-                className="mainContentTablet"
+                className="mainContentMobile"
                 >
                 <h1>SKILLS</h1>
-                <div id="mainSkillsImageTablet"></div>
+                <div id="mainSkillsImageMobile"></div>
             </div>
         </div>
     );
 };
 
-export default HomeTablet;
+export default HomeMobile;

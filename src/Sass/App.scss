@@ -14,9 +14,10 @@
 
 @import "Titles";
 @import "Home";
-@import "HomeTablet";
+@import "HomeMobile";
 @import "Nav";
 @import "About";
+@import "AboutTablet";
 @import "Projects";
 @import "Skills";
 
@@ -28,21 +29,24 @@
 }
 
 @media (min-width: 1025px){
-  #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
+//   #homeTablet, #projectsTablet, #skillsTablet {
+  #homeMobile, #aboutTablet, #projectsTablet, #skillsTablet {
     display: none;
   }
 }
 
 @media (min-width: 1px) and (max-width: 499px) {
-   #aboutTablet, #projectsTablet, #skillsTablet {
+    #projectsTablet, #skillsTablet {
+//    #aboutTablet, #projectsTablet, #skillsTablet {
 //   #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
-    display: none;
+        display: none;
   }
 }
 
 @media (min-width: 500px) {
-    #aboutMobile, #projectsMobile, #skillsMobile {
+    #projectsMobile, #skillsMobile {
+    // #aboutMobile, #projectsMobile, #skillsMobile {
 //   #homeMobile, #aboutMobile, #projectsMobile, #skillsMobile {
-    display: none;
+        display: none;
   }
 }

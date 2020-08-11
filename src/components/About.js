@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AboutTablet from './AboutTablet';
 import NavBar from './NavBar';
 import { Fade, LightSpeed } from 'react-reveal'
 
@@ -43,12 +44,14 @@ function About () {
         </div>
       </div>
 
-      <div id="aboutTablet">
+      {/* <div id="aboutTablet">
         
       </div>
       <div id="aboutMobile">
 
-      </div>
+      </div> */}
+
+      <AboutTablet/>
     </>
   );
 };
