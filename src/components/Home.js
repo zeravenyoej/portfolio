@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faCaretDown, faEnvelopeSquare, faCamera, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faEnvelopeSquare, faCamera } from '@fortawesome/free-solid-svg-icons';
 import HomeTablet from './HomeTablet';
 
 function Home () {
