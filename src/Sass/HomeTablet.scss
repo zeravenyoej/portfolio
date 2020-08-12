@@ -1,0 +1,88 @@
+#homeTablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  
+    .mainContentTablet {
+        margin: 5.5%;
+        width: 90%;
+
+        h1 {
+            font-family: 'Bowlby One', cursive;
+            font-size: 3rem;
+            margin-bottom: 4%;
+        }
+
+        #name {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-top: 3%;
+        }
+
+        #iconsDivTablet {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .icon {
+                height: 175px;
+                width: 175px;
+            }
+
+            p {
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            
+            .linkedIn {
+                color:#0E76A8;
+                margin: 5% 5%;
+            }
+
+            .github {
+                color: #a80e28;
+                margin: 5% 5%;
+            }
+
+            .medium {
+                color:#66cdaa;
+                margin: 5% 5%;
+            }
+
+            .email {
+                color: #e4981f;
+                margin: 5% 5%;
+            }
+
+            .letterboxd {
+                color:#23817c;
+                margin: 5% 5%;
+            }
+        }
+    }
+}
+
+#mainAboutImageTablet {
+    background: url("../images/joey.png");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    max-width: 100%;
+}
+
+#mainProjectImageTablet {
+    background: url("../images/SignLingoLg.png");
+    background-size: cover;
+    height: 800px;
+}
+
+#mainSkillsImageTablet {
+    background: url("../images/community.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}

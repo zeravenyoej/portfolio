@@ -43,7 +43,7 @@ main {
         }
 
         
-        .hide{
+        .hide {
           display: none;
           color: black;
           margin-top: -8px;
@@ -95,13 +95,6 @@ main {
         #letterboxdP {
           background-color: #23817c;
         }
-
-        .resume:hover, #resumeArrow {
-          color:#ca66cd;
-        }
-        #resumeP {
-          background-color: #ca66cd;
-        }
       }
     }
   }
@@ -112,7 +105,7 @@ main {
 }
 
 .mainProjectImage {
-  background-image: url("../images/SignLingoLg.png");
+  background: url("../images/SignLingoLg.png");
 }
 
 .mainSkillsImage {

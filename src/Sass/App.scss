@@ -14,6 +14,7 @@
 
 @import "Titles";
 @import "Home";
+@import "HomeTablet";
 @import "HomeMobile";
 @import "Nav";
 @import "About";
@@ -30,7 +31,7 @@
 
 @media (min-width: 1025px){
 //   #homeTablet, #projectsTablet, #skillsTablet {
-  #homeMobile, #aboutTablet, #projectsTablet, #skillsTablet {
+  #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
     display: none;
   }
 }

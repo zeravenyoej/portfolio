@@ -61,14 +61,6 @@ function Home () {
                     <p id="letterboxdP">Movies</p>
                   </div>
                 </a>
-
-                <a target="_blank" rel="noopener noreferrer" href="../images/Resume.png" download="JosephNevarezResume">
-                  <FontAwesomeIcon className="icon resume" icon={faFileAlt}/>
-                  <div className="hide">
-                    <FontAwesomeIcon id="resumeArrow" icon={faCaretDown}/>
-                    <p id="resumeP">Resume</p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>
@@ -112,10 +104,6 @@ function Home () {
       </div>
 
       <HomeTablet/>
-
-      {/* <div id="homeMobile">
-            MOBILE VIEW
-      </div> */}
     </>
   );
 };

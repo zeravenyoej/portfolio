@@ -1,87 +1,89 @@
 #homeMobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-behavior: smooth;
-  
-    .mainContentMobile {
-        margin: 5.5%;
-        width: 90%;
-
-        h1 {
-            font-family: 'Bowlby One', cursive;
-            font-size: 3rem;
-            margin-bottom: 4%;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        #iconsDivMobile {
-            display:flex;
-            justify-content: space-around;
-            padding: 10%;
-            flex-wrap: wrap;
-
-            .icon {
-                height: 100px;
-                width: 100px;
-            }
-
-            .linkedIn {
-                color:#0E76A8;
-                text-decoration: none;
-                margin: 5% auto;
-            }
-
-            .github {
-                color: #a80e28;
-                text-decoration: none;
-                margin: 5% auto;
-            }
-
-            .medium {
-                color:#66cdaa;
-                text-decoration: none;
-                margin: 5% auto;
-            }
-
-            .email {
-                color: #e4981f;
-                text-decoration: none;
-                margin: 5% auto;
-            }
-
-            .letterboxd {
-                color:#23817c;
-                text-decoration: none;
-                margin: 5% auto;
-            }
-
-            .resume {
-                color:#ca66cd;   
-                text-decoration: none;
-                margin: 5% auto;
-            }
-        }
-    }
-}
-
-#mainAboutImageMobile {
-    background: url("../images/hawaii.jpg");
-    height: 300px;
-    background-size: cover;
-}
-
-#mainProjectImageMobile {
-    background: url("../images/SignLingoLg.png");
-    height: 300px;
-    background-size: cover;
-}
-
-#mainSkillsImageMobile {
-    background: url("../images/community.jpg");
-    height: 300px;
-    background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-behavior: smooth;
+        
+          .mainContentMobile {
+              margin: 5.5%;
+              width: 90%;
+      
+              h1 {
+                  font-family: 'Bowlby One', cursive;
+                  font-size: 3rem;
+                  margin-bottom: 4%;
+              }
+      
+              #name {
+                  font-size: 3rem;
+              }
+      
+              h2 {
+                  font-size: 2.5rem;
+                  margin-top: 3%;
+              }
+      
+              #iconsDivMobile {
+                display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+      
+                  .icon {
+                      height: 125px;
+                      width: 125px;
+                  }
+      
+                  p {
+                      text-decoration: none;
+                      font-size: 1.5rem;
+                  }
+                  
+                  .linkedIn {
+                    //   display: none;
+                      color:#0E76A8;
+                      margin: 5% 5%;
+                  }
+      
+                  .github {
+                      color: #a80e28;
+                      margin: 5% 5%;
+                  }
+      
+                  .medium {
+                      color:#66cdaa;
+                      margin: 5% 5%;
+                  }
+      
+                  .email {
+                      color: #e4981f;
+                      margin: 5% 5%;
+                  }
+      
+                  .letterboxd {
+                      color:#23817c;
+                      margin: 5% 5%;
+                  }
+              }
+          }
+      
+      #mainAboutImageMobile {
+          background: url("../images/joey.png");
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          max-width: 100%;
+      }
+      
+      #mainProjectImageMobile {
+          background: url("../images/SignLingoLg.png");
+          background-size: cover;
+          height: 400px;
+      }
+      
+      #mainSkillsImageMobile {
+          background: url("../images/community.jpg");
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+      }
 }
