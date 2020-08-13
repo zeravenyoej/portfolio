@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AboutTablet from './AboutTablet';
 import NavBar from './NavBar';
-import { Fade, LightSpeed } from 'react-reveal'
+import { Fade, LightSpeed } from 'react-reveal';
 
 
 function About () {
@@ -23,6 +23,8 @@ function About () {
     }
   },[])
 
+
+
   return (
     <>
       <div id="aboutDesktop">
@@ -43,13 +45,6 @@ function About () {
           </Fade>
         </div>
       </div>
-
-      {/* <div id="aboutTablet">
-        
-      </div>
-      <div id="aboutMobile">
-
-      </div> */}
 
       <AboutTablet/>
     </>

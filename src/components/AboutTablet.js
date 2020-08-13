@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './NavBar';
+import Hamburger from './Hamburger';
 
 const AboutTablet = () => {
     return (
         <div id="aboutTablet">
-            <NavBar/>
-            tablet view
+            <Hamburger/>
+            tablet view    
         </div>
     );
 };

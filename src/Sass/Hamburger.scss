@@ -1,0 +1,54 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    &.open {
+        background-color: #333;
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 90%;
+        width: 300px;
+        right: -240px;
+        top: 15%;
+        box-shadow: 2px 2px 2px #ccc;
+
+
+        &.active {
+            right: 0px;
+            width: 10%;
+            transition: 300ms ease all;
+        }
+
+        li {
+            list-style-type: none;
+            color: white;
+            margin: 30%;
+        }
+
+        figure {
+            height: 40px;
+            width: 40px;
+            color: #333;
+            cursor: pointer;
+            position: fixed;
+            right: 2.5%;
+            top: 3%;
+
+            &.isWhite {
+                color: white;
+                transition: 300ms ease all;
+            }
+        }
+    }
+}

@@ -21,6 +21,7 @@
 @import "AboutTablet";
 @import "Projects";
 @import "Skills";
+@import "Hamburger";
 
 
 @media (max-width: 1025px) {
@@ -30,24 +31,25 @@
 }
 
 @media (min-width: 1025px){
-//   #homeTablet, #projectsTablet, #skillsTablet {
-  #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
+    #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
     display: none;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 1024px) {
+    nav {
+        display: none;
   }
 }
 
 @media (min-width: 1px) and (max-width: 499px) {
     #projectsTablet, #skillsTablet {
-//    #aboutTablet, #projectsTablet, #skillsTablet {
-//   #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
         display: none;
   }
 }
 
 @media (min-width: 500px) {
-    #projectsMobile, #skillsMobile {
-    // #aboutMobile, #projectsMobile, #skillsMobile {
-//   #homeMobile, #aboutMobile, #projectsMobile, #skillsMobile {
+     #projectsMobile, #skillsMobile {
         display: none;
   }
 }

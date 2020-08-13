@@ -6,9 +6,9 @@ const NavCard = (props) => {
   const [size, setSize] = useState(true);
 
   function handleEvents(state) {
-    if (state === true) {
+    if (state) {
       setSize(true)
-    } else if (state === false) {
+    } else {
       setSize(false)
     }
   };
