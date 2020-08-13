@@ -1,0 +1,29 @@
+#aboutMobile { 
+
+    h1 {
+        margin: 1% 0 5% 33%;
+    }
+    
+    .about {
+        flex-direction: column;
+        margin: auto;
+
+        #aboutImage {
+            width: 300px;
+            height: 400px;
+            background: url("../images/CityMe.png");
+            background-position: left;
+            margin: auto;
+            position: static;
+        }
+        
+        #aboutText {
+            border-top: 1px solid black;
+            border-left: none;
+            margin: auto;
+            margin-top: 5%;
+            width: 600px;
+            padding-bottom: 5%;
+        }
+    }
+}

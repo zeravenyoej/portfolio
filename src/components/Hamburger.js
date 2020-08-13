@@ -6,12 +6,13 @@ import cuid from "cuid";
 
 
 const Hamburger = () => {
-    const [navOpen, setNavOpen] = useState(false)
+    const [navOpen, setNavOpen] = useState(false);
     const history = useHistory();
-    const data = ['home', 'about', 'projects', 'skills']
+    const data = ['home', 'about', 'projects', 'skills'];
+    let intViewportWidth = window.innerWidth;
 
     return (
-        <div className={`hamburger ${navOpen ? "open" : ""}`}>
+        <div className={`hamburger ${navOpen ? "open" : ""} ${intViewportWidth > 415 ? "" : 'hamburgerMobile'}`}>
             <ul
                 className={ navOpen ? 'active' : '' }>
                 <figure 

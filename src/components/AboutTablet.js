@@ -5,6 +5,7 @@ import { Fade, LightSpeed } from 'react-reveal';
 const AboutTablet = () => {
     const [showContent, setShowContent] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
+    let intViewportWidth = window.innerWidth;
 
     useEffect(()=>{
         const titleTimer = setTimeout(()=>{
@@ -22,7 +23,7 @@ const AboutTablet = () => {
     },[])
 
     return (
-        <div id="aboutTablet">
+        <div id={intViewportWidth > 415 ? "aboutTablet" : "aboutMobile"}>
             <Hamburger/>
             
             <LightSpeed left when={showTitle}>
@@ -43,9 +44,8 @@ const AboutTablet = () => {
                     </div>
                 </Fade>
             </div>
-      
         </div>
     );
-};
+}
 
 export default AboutTablet;
