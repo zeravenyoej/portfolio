@@ -11,6 +11,11 @@
 
 .projecth1 {
   margin: auto;
+
+  @media (min-width: 1px) and (max-width: 760px) {
+    text-align: start;
+    margin-left: 20%;
+  }
 }
 
 .contactTitle {

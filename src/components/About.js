@@ -3,7 +3,6 @@ import AboutTablet from './AboutTablet';
 import NavBar from './NavBar';
 import { Fade, LightSpeed } from 'react-reveal';
 
-
 function About () {
   const [showContent, setShowContent] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
@@ -22,8 +21,6 @@ function About () {
       clearTimeout(contentTimer)
     }
   },[])
-
-
 
   return (
     <>

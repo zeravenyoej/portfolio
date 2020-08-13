@@ -26,22 +26,22 @@
 
 
 @media (max-width: 1025px) {
-  #homeDesktop, #aboutDesktop, #projectsDesktop, #skillsDesktop {
-    display: none;
+    #homeDesktop, #aboutDesktop, #skillsDesktop {
+        display: none;
   }
 }
 
 @media (min-width: 1025px){
-    #homeTablet, #aboutTablet, #projectsTablet, #skillsTablet {
-    display: none;
-  }
-}
-
-@media (min-width: 1px) and (max-width: 1024px) {
-    nav {
+    #homeTablet, #aboutTablet, #skillsTablet {
         display: none;
   }
 }
+
+// @media (min-width: 1px) and (max-width: 1024px) {
+//     nav {
+//         display: none;
+//   }
+// }
 
 @media (min-width: 1px) and (max-width: 499px) {
     #projectsTablet, #skillsTablet {
