@@ -30,15 +30,17 @@ const Projects = () => {
                                         <p>click to below to learn more</p>
                                         <img src={flipArrow} alt="flip arrow"/>
                                     </div>
+
                                     <div className="projectCardWithImage"></div>
                                 </div>
 
-                                <div onClick={()=>setSignFlipped(!signFlipped)} >
+                                <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
                                     <div className="stuffAboveCard">
                                         <p>click to below to go back</p>
                                         <img src={flipArrow} alt="flip arrow"/>
                                     </div>
-                                    <div className="projectCard textSide">
+                                    
+                                    <div className="textSide">
                                         <h3>A mobile-first, <br/>sign language learning platform</h3> <br/><hr/>
                                         <br/><strong>April-May 2020</strong> <br/> <br/> 
                                         <ul>
@@ -50,7 +52,7 @@ const Projects = () => {
                                 </div>
                             </ReactCardFlip>
 
-                            <div className="projectsUnderCard">
+                            <div className="stuffUnderCard">
                                 <h1>SignLingo</h1>
                                 <div className="projectLinks">
                                     <a
