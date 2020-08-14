@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from './NavBar';
 import { Slide } from 'react-reveal';
-
 import reactImg from '../images/skills/react.png';
 import JavascriptImg from '../images/skills/JavaScript.png';
 import sassImg from '../images/skills/sass.png';
@@ -20,6 +19,7 @@ import lessImg from "../images/skills/less.png";
 import npmImg from '../images/skills/npm.png';
 import sqliteImg from '../images/skills/sqlite.png';
 import mongodbImg from '../images/skills/mongodb.png';
+import SkillsTablet from './SkillsTablet';
 
 function Skills () {
   const [front, setFront] = useState(false);
@@ -190,12 +190,7 @@ function Skills () {
         </div>
       </div>
 
-      <div id="skillsTablet">
-        
-      </div>
-      <div id="skillsMobile">
-
-      </div>
+      <SkillsTablet/>  
 
     </>
   );

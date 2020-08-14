@@ -70,3 +70,15 @@
         }
     }
 }
+
+.hamburgerTablet { 
+    z-index: 9;
+
+    ul {
+        z-index: 9;
+
+        &.active {
+            z-index: 9;
+        }
+    }
+}

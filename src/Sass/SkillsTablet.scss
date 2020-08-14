@@ -1,14 +1,13 @@
-.skillsDiv {
+#skillsTablet {
     display: flex; 
     flex-direction: column;
     align-items: center;
 
     .skillButtons {
-        width: 75%;
-        margin-left: 10%;
+        width: 100%;
         padding: 3%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     
         button {
             position: relative;
@@ -17,27 +16,21 @@
             padding: 1.5%;
             border-radius: 15px;
             border: 1px solid black;
-            width: 225px;
+            width: 210px;
             font-size: 1.4rem;
             outline: none;
             box-shadow: 8px 10px 10px 0;
             font-family: 'Bungee Inline', cursive;
             transition: all 0.2s;
-            margin-top: 0;
-            margin-bottom: 10px;
         }
-    
-        button:hover {
-            opacity: 1;
-        }
-    
+        
         button:active {
             box-shadow: 4px 5px 5px 0;
             margin-top: 10px;
             margin-bottom: 0;
             transition: all 0.2s;
         }
-  
+    
         #frontButton {
             background-color: #F65058FF;
         }
@@ -52,16 +45,15 @@
     .skillsContent {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 15%;
-  
+    
         .skills {
             width: 110px;
-            height: 110px;
+            height: 140px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 3%;
+            margin: 4%;
             font-size: 1.3rem;
         }
     
@@ -79,5 +71,18 @@
         .back {
             background-color: #FBDE44FF;
         }
+    }
+
+    .skillButtonsMobile { 
+        flex-direction: column;
+        align-items: center;
+        
+        #frontButton, #stylingButton, #backButton {
+            margin: 2%;
+        }
+    }
+
+    .skillsContentMobile {
+        justify-content: center;
     }
 }

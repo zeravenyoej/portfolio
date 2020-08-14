@@ -12,7 +12,7 @@ const Hamburger = () => {
     let intViewportWidth = window.innerWidth;
 
     return (
-        <div className={`hamburger ${navOpen ? "open" : ""} ${intViewportWidth > 415 ? "" : 'hamburgerMobile'}`}>
+        <div className={`hamburger ${navOpen ? "open" : ""} ${intViewportWidth > 415 ? "hamburgerTablet" : 'hamburgerMobile'}`}>
             <ul
                 className={ navOpen ? 'active' : '' }>
                 <figure 

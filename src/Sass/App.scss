@@ -22,6 +22,7 @@
 @import "AboutMobile";
 @import "Projects";
 @import "Skills";
+@import "SkillsTablet";
 @import "Hamburger";
 
 
@@ -37,20 +38,14 @@
   }
 }
 
-// @media (min-width: 1px) and (max-width: 1024px) {
-//     nav {
+// @media (min-width: 1px) and (max-width: 499px) {
+//     #skillsTablet {
 //         display: none;
 //   }
 // }
 
-@media (min-width: 1px) and (max-width: 499px) {
-    #projectsTablet, #skillsTablet {
-        display: none;
-  }
-}
-
-@media (min-width: 500px) {
-     #projectsMobile, #skillsMobile {
-        display: none;
-  }
-}
+// @media (min-width: 500px) {
+//      #projectsMobile {
+//         display: none;
+//   }
+// }
