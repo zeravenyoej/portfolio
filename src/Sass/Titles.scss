@@ -7,6 +7,10 @@
 
 .aboutTitle {
     margin-left: 22%;
+
+    @media (min-width: 1px) and (max-width: 1024px) {
+        margin: 1% 0 5% 33%;
+    }
 }
 
 .projecth1 {
