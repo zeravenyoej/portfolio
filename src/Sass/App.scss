@@ -29,23 +29,11 @@
 @media (max-width: 1025px) {
     #homeDesktop, #aboutDesktop, #skillsDesktop {
         display: none;
-  }
+    }
 }
 
 @media (min-width: 1025px){
     #homeTablet, #aboutTablet, #skillsTablet {
         display: none;
-  }
+    }
 }
-
-// @media (min-width: 1px) and (max-width: 499px) {
-//     #skillsTablet {
-//         display: none;
-//   }
-// }
-
-// @media (min-width: 500px) {
-//      #projectsMobile {
-//         display: none;
-//   }
-// }

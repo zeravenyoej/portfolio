@@ -19,9 +19,9 @@ import gitImg from '../images/skills/git.png';
 import lessImg from "../images/skills/less.png";
 import npmImg from '../images/skills/npm.png';
 import sqliteImg from '../images/skills/sqlite.png';
-import mongodbImg from '../images/skills/mongodb.png';
 
-const SkillsTablet = () => {
+
+const SkillsSmall = () => {
     const [front, setFront] = useState(false);
     const [back, setBack] = useState(false);
     const [styling, setStyling] = useState(false);
@@ -47,7 +47,7 @@ const SkillsTablet = () => {
                         <img src={reactImg} alt="React logo"/>
                     </div>
 
-                    <div className={`skills ${front ? "front": null}`}>
+                    <div className={`skills ${front ? "front": null} ${back ? "back": null}`}>
                         <b>Javascript</b>
                         <img src={JavascriptImg} alt="JavaScript logo"/>
                     </div>
@@ -67,7 +67,7 @@ const SkillsTablet = () => {
                         <img src={reduxImg} alt="Redux logo"/>
                     </div>
 
-                    <div className={`skills ${styling ? "styling": null}`}>
+                    <div className={`skills ${styling ? "styling": null} smallerText`}>
                         <b>Styled Components</b>
                         <img src={styledcompImg} alt="Styled Components logo"/>
                     </div>
@@ -82,7 +82,7 @@ const SkillsTablet = () => {
                         <img src={htmlImg} alt="HTML logo"/>
                     </div>
 
-                    <div className={`skills ${back ? "back": null}`}>
+                    <div className={`skills  ${front ? "front": null} ${back ? "back": null}`}>
                         <b>Python</b>        
                         <img src={pythonImg} alt="Python logo"/>
                     </div>
@@ -92,7 +92,7 @@ const SkillsTablet = () => {
                         <img src={nodeImg} alt="Node logo"/>
                     </div>
 
-                    <div className={`skills ${styling ? "styling": null}`}>
+                    <div className={`skills ${styling ? "styling": null} smallerText`}>
                         <b>Material UI</b>
                         <img src={materialImg} alt="Material UI logo"/>
                     </div>
@@ -102,7 +102,7 @@ const SkillsTablet = () => {
                         <img src={cssImg} alt="CSS logo"/>
                     </div>
 
-                    <div className="skills">
+                    <div className={`skills ${front ? "front": null}`}>
                         <b>Jest</b>
                         <img src={jestImg} alt="Jest logo"/>
                     </div>
@@ -126,15 +126,10 @@ const SkillsTablet = () => {
                         <b>Sqlite</b>
                         <img src={sqliteImg} alt="Sqlite logo"/>
                     </div>
-
-                    <div className="skills">
-                        <b>MongoDB</b>
-                        <img src={mongodbImg} alt="Mongodb logo"/>
-                    </div>
                 </div>
             </Slide>     
         </div>
     );
 };
 
-export default SkillsTablet;
+export default SkillsSmall;

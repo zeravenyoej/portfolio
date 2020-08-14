@@ -18,32 +18,30 @@ import gitImg from '../images/skills/git.png';
 import lessImg from "../images/skills/less.png";
 import npmImg from '../images/skills/npm.png';
 import sqliteImg from '../images/skills/sqlite.png';
-import mongodbImg from '../images/skills/mongodb.png';
-import SkillsTablet from './SkillsTablet';
+import SkillsSmall from './SkillsSmall';
 
 function Skills () {
-  const [front, setFront] = useState(false);
-  const [back, setBack] = useState(false);
-  const [styling, setStyling] = useState(false);
+    const [front, setFront] = useState(false);
+    const [back, setBack] = useState(false);
+    const [styling, setStyling] = useState(false);
 
-  const [react, setReact] = useState(false);
-  const [javascript, setJavascript] = useState(false);
-  const [sass, setSass] = useState(false);
-  const [knex, setKnex] = useState(false);
-  const [redux, setRedux] = useState(false);
-  const [styledComp, setStyledComp] = useState(false);
-  const [bootstrap, setBootstrap] = useState(false);
-  const [html, setHtml] = useState(false);
-  const [python, setPython] = useState(false);
-  const [node, setNode] = useState(false);
-  const [material, setMaterial] = useState(false);
-  const [css, setCss] = useState(false);
-  const [jest, setJest] = useState(false);
-  const [git, setGit] = useState(false);
-  const [less, setLess] = useState(false);
-  const [npm, setNpm] = useState(false);
-  const [sqlite, setSqlite] = useState(false);
-  const [mongodb, setMongodb] = useState(false);
+    const [react, setReact] = useState(false);
+    const [javascript, setJavascript] = useState(false);
+    const [sass, setSass] = useState(false);
+    const [knex, setKnex] = useState(false);
+    const [redux, setRedux] = useState(false);
+    const [styledComp, setStyledComp] = useState(false);
+    const [bootstrap, setBootstrap] = useState(false);
+    const [html, setHtml] = useState(false);
+    const [python, setPython] = useState(false);
+    const [node, setNode] = useState(false);
+    const [material, setMaterial] = useState(false);
+    const [css, setCss] = useState(false);
+    const [jest, setJest] = useState(false);
+    const [git, setGit] = useState(false);
+    const [less, setLess] = useState(false);
+    const [npm, setNpm] = useState(false);
+    const [sqlite, setSqlite] = useState(false);
 
   return (
     <>
@@ -68,7 +66,7 @@ function Skills () {
               </div>
 
               <div
-                className={`skills ${front ? "front": null}`}
+                className={`skills ${front ? "front": null} ${back ? "back": null}`}
                 onMouseEnter={()=>setJavascript(true)}
                 onMouseLeave={()=>setJavascript(false)}>
                 {javascript ? <b>JavaScript</b> : <img src={JavascriptImg} alt="JavaScript logo"/>}
@@ -117,7 +115,7 @@ function Skills () {
               </div>
 
               <div
-                className={`skills ${back ? "back": null}`}
+                className={`skills ${front ? "front": null} ${back ? "back": null}`}
                 onMouseEnter={()=>setPython(true)}
                 onMouseLeave={()=>setPython(false)}>
                 {python ? <b>Python</b> : <img src={pythonImg} alt="Python logo"/>}
@@ -145,7 +143,7 @@ function Skills () {
               </div>
 
               <div
-                className="skills"
+                className={`skills ${front ? "front": null}`}
                 onMouseEnter={()=>setJest(true)}
                 onMouseLeave={()=>setJest(false)}>
                 {jest ? <b>Jest</b> : <img src={jestImg} alt="Jest logo"/>}
@@ -178,20 +176,11 @@ function Skills () {
                 onMouseLeave={()=>setSqlite(false)}>
                 {sqlite ? <b>Sqlite</b> : <img src={sqliteImg} alt="Sqlite logo"/>}
               </div>
-
-              <div
-                className="skills"
-                onMouseEnter={()=>setMongodb(true)}
-                onMouseLeave={()=>setMongodb(false)}>
-                {mongodb ? <b>Mongo DB</b> : <img src={mongodbImg} alt="Mongodb logo"/>}
-              </div>
             </div>
           </Slide>
         </div>
       </div>
-
-      <SkillsTablet/>  
-
+      <SkillsSmall/>  
     </>
   );
 };

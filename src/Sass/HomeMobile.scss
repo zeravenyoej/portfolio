@@ -1,89 +1,88 @@
 #homeMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
         
-          .mainContentMobile {
-              margin: 5.5%;
-              width: 90%;
+    .mainContentMobile {
+        margin: 5.5%;
+        width: 90%;
+
+        h1 {
+            font-family: 'Bowlby One', cursive;
+            font-size: 3rem;
+            margin-bottom: 4%;
+        }
+
+        #name {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 3%;
+        }
+
+        #iconsDivMobile {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .icon {
+                height: 100px;
+                width: 100px;
+            }
+
+            p {
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            
+            .linkedIn {
+                color:#0E76A8;
+                margin: 5% 5%;
+            }
+
+            .github {
+                color: #a80e28;
+                margin: 5% 5%;
+            }
+
+            .medium {
+                color:#66cdaa;
+                margin: 5% 5%;
+            }
+
+            .email {
+                color: #e4981f;
+                margin: 5% 5%;
+            }
+
+            .letterboxd {
+                color:#23817c;
+                margin: 5% 5%;
+            }
+        }
+    }
       
-              h1 {
-                  font-family: 'Bowlby One', cursive;
-                  font-size: 3rem;
-                  margin-bottom: 4%;
-              }
-      
-              #name {
-                  font-size: 3rem;
-              }
-      
-              h2 {
-                  font-size: 2.5rem;
-                  margin-top: 3%;
-              }
-      
-              #iconsDivMobile {
-                display: flex;
-                  justify-content: space-around;
-                  flex-wrap: wrap;
-      
-                  .icon {
-                      height: 100px;
-                      width: 100px;
-                  }
-      
-                  p {
-                      text-decoration: none;
-                      font-size: 1.5rem;
-                  }
-                  
-                  .linkedIn {
-                    //   display: none;
-                      color:#0E76A8;
-                      margin: 5% 5%;
-                  }
-      
-                  .github {
-                      color: #a80e28;
-                      margin: 5% 5%;
-                  }
-      
-                  .medium {
-                      color:#66cdaa;
-                      margin: 5% 5%;
-                  }
-      
-                  .email {
-                      color: #e4981f;
-                      margin: 5% 5%;
-                  }
-      
-                  .letterboxd {
-                      color:#23817c;
-                      margin: 5% 5%;
-                  }
-              }
-          }
-      
-      #mainAboutImageMobile {
-          background: url("../images/joey.png");
-          background-size: cover;
-          background-position: center;
-          height: 400px;
-          max-width: 100%;
-      }
-      
-      #mainProjectImageMobile {
-          background: url("../images/SignLingoLg.png");
-          background-size: cover;
-          height: 400px;
-      }
-      
-      #mainSkillsImageMobile {
-          background: url("../images/community.jpg");
-          background-size: cover;
-          background-position: center;
-          height: 400px;
-      }
+    #mainAboutImageMobile {
+        background: url("../images/joey.png");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        max-width: 100%;
+    }
+    
+    #mainProjectImageMobile {
+        background: url("../images/SignLingoLg.png");
+        background-size: cover;
+        height: 400px;
+    }
+    
+    #mainSkillsImageMobile {
+        background: url("../images/community.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
 }

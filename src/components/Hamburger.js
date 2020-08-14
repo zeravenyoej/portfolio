@@ -21,6 +21,7 @@ const Hamburger = () => {
                     >
                     <FontAwesomeIcon class="" icon={faBars}/>
                 </figure>
+                
                 {data.map((link) => (
                     <li  
                         key={cuid()} 

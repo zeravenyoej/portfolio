@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare, faCamera} from '@fortawesome/free-solid-svg-icons';
 
-const HomeTablet = () => {
+const HomeSmall = () => {
     const history = useHistory();
     let intViewportWidth = window.innerWidth;
 
@@ -61,4 +61,4 @@ const HomeTablet = () => {
     );
 };
 
-export default HomeTablet;
+export default HomeSmall;

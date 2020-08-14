@@ -30,7 +30,6 @@ const AboutTablet = () => {
                 <h1 className="titleh1 aboutTitle">about me</h1>
             </LightSpeed>
 
-
             <div className="about">
                 <Fade top when={showContent}>
                     <div id="aboutImage"></div>

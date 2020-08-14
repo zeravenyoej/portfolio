@@ -1,22 +1,22 @@
 .about {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 18%;
-  margin-top: 5%;
-  
-  #aboutImage {
-    width: 500px;
-    height: 628px;
-    background: url("../images/CityMe.png");
-    margin-left: 2.5%;
-  }
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18%;
+    margin-top: 5%;
+    
+    #aboutImage {
+        width: 500px;
+        height: 628px;
+        background: url("../images/CityMe.png");
+        margin-left: 2.5%;
+    }
 
-  #aboutText {
-    width: 500px;
-    height: 628px;
-    padding: 3%;
-    border-left: 1px solid black;
-    text-align: left;
-    text-indent: 25px;
-  }
+    #aboutText {
+        width: 500px;
+        height: 628px;
+        padding: 3%;
+        border-left: 1px solid black;
+        text-align: left;
+        text-indent: 25px;
+    }
 }

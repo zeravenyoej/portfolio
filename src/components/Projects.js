@@ -23,24 +23,30 @@ const Projects = () => {
             <div id="projectsMainDiv">
                 <Slide left >
                     <div className="projects">
-                        <section id="signLingo projects">
+                        <section>
                             <ReactCardFlip isFlipped={signFlipped}>
                                 <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
                                     <div className="stuffAboveCard">
-                                        <p>Click to Learn More</p>
+                                        <p>click to below to learn more</p>
                                         <img src={flipArrow} alt="flip arrow"/>
                                     </div>
                                     <div className="projectCardWithImage"></div>
                                 </div>
 
-                                <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard textSide">
-                                    <h3>A mobile-first, <br/>sign language learning platform</h3> <br/><hr/>
-                                    <br/><strong>April-May 2020</strong> <br/> <br/> 
-                                    <ul>
-                                        <li>Built to the specifications of a client on a remote, cross-functional team of 24 over 8 weeks</li> <br/>
-                                        <li>Contributed primarily as a front-end engineer, on the app's first team of web developers</li> <br/>
-                                        <li>Tech used: React, Redux, Sass, Material UI, React Card Flip, Formik</li>
-                                    </ul>
+                                <div onClick={()=>setSignFlipped(!signFlipped)} >
+                                    <div className="stuffAboveCard">
+                                        <p>click to below to go back</p>
+                                        <img src={flipArrow} alt="flip arrow"/>
+                                    </div>
+                                    <div className="projectCard textSide">
+                                        <h3>A mobile-first, <br/>sign language learning platform</h3> <br/><hr/>
+                                        <br/><strong>April-May 2020</strong> <br/> <br/> 
+                                        <ul>
+                                            <li>Built to the specifications of a client on a remote, cross-functional team of 24 over 8 weeks</li> <br/>
+                                            <li>Contributed primarily as a front-end engineer, on the app's first team of web developers</li> <br/>
+                                            <li>Tech used: React, Redux, Sass, Material UI, React Card Flip, Formik</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </ReactCardFlip>
 
