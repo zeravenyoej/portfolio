@@ -21,7 +21,7 @@
 @import "AboutMobile";
 @import "Projects";
 @import "Skills";
-@import "SkillsTablet";
+@import "SkillsSmall";
 @import "Hamburger";
 
 
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 1025px){
-    #homeSmall, #aboutTablet, #skillsTablet {
+    #homeSmall, #aboutTablet, #skillsSmall {
         display: none;
     }
 }

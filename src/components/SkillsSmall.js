@@ -25,15 +25,13 @@ const SkillsSmall = () => {
     const [front, setFront] = useState(false);
     const [back, setBack] = useState(false);
     const [styling, setStyling] = useState(false);
-
-    let intViewportWidth = window.innerWidth;
   
     return (
-        <div id="skillsTablet">
+        <div id="skillsSmall">
             <Hamburger/>
             <Slide top>
                 <h1 className="titleh1 skillsTitle">skills</h1>
-                <div className={`skillButtons ${intViewportWidth > 415 ? "" : "skillButtonsMobile"}`}>
+                <div className="skillButtons">
                     <button id="frontButton" onClick={()=>setFront(!front)}>Frontend <br/> technologies</button>
                     <button id="stylingButton" onClick={()=>setStyling(!styling)}> Styling <br/> libraries</button>
                     <button id="backButton" onClick={()=>setBack(!back)}>Backend <br/>technologies</button>
@@ -41,7 +39,7 @@ const SkillsSmall = () => {
             </Slide>
 
             <Slide bottom cascade>
-                <div className={`skillsContent ${intViewportWidth > 415 ? "" : "skillsContentMobile"}`}>
+                <div className="skillsContent">
                     <div className={`skills ${front ? "front" : null}`}>
                         <b>ReactJS</b>
                         <img src={reactImg} alt="React logo"/>
