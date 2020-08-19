@@ -31,12 +31,14 @@ const Projects = () => {
 
                                 <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
                                     <div className="textSide">
-                                        <h3>A mobile-first, <br/>sign language learning platform</h3> <br/><hr/>
-                                        <br/><strong>April-May 2020</strong> <br/> <br/> 
+                                        <h3>SignLingo: A mobile, sign language learning platform</h3>
+                                        <h5 className="date">April-May 2020</h5>
+                                        <h5>Tech Stack: React, Redux, Sass, Material UI, React Card Flip, Formik</h5>
+                                            <br/><hr/><br/>
                                         <ul>
                                             <li>Built to the specifications of a client on a remote, cross-functional team of 24 over 8 weeks</li> <br/>
                                             <li>Contributed primarily as a front-end engineer, on the app's first team of web developers</li> <br/>
-                                            <li>Tech used: React, Redux, Sass, Material UI, React Card Flip, Formik</li>
+                                            <li>Managed flow of the app's development with prior language teaching expertise</li> <br/>
                                         </ul>
                                     </div>
                                 </div>
