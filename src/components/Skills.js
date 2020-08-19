@@ -49,7 +49,7 @@ function Skills () {
         <NavBar/>
         <div className="skillsDiv">
           <Slide top>
-            <h1 className="titleh1 skillsTitle">tech skills <br/> I've aquired</h1>
+            <h1 className="titleh1 skillsTitle">skills</h1>
             <div className="skillButtons">
                 <button id="frontButton" onClick={()=>setFront(!front)}>Frontend <br/> technologies</button>
                 <button id="stylingButton" onClick={()=>setStyling(!styling)}> Styling <br/> libraries</button>

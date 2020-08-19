@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import AboutTablet from './AboutTablet';
+import AboutSmall from './AboutSmall';
 import NavBar from './NavBar';
 import { Fade, LightSpeed } from 'react-reveal';
 
@@ -45,9 +45,9 @@ function About () {
                     </Fade>
                 </div>
             </div>
-            <AboutTablet/>
+            <AboutSmall/>
         </>
-  );
+    );
 };
 
 export default About;

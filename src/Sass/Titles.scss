@@ -3,34 +3,38 @@
     font-family: 'Bowlby One', cursive;
     border-bottom: 1px solid black;
     width: 33%;
+    text-align: center;
+    padding-bottom: 1%;
+
+    @media (min-width: 1px) and (max-width: 1025px) {
+        width: 75%;
+        margin: 2%;
+        margin-bottom: 3.5%;
+    }
 }
 
 .aboutTitle {
     margin-left: 22%;
 
-    @media (min-width: 1px) and (max-width: 1024px) {
-        margin: 1% 0 5% 33%;
+    @media (min-width: 1px) and (max-width: 415px) {
+        margin-left: 10%;
+    }
+
+    @media (min-width: 416px) and (max-width: 1025px) {
+        width: 55%;
     }
 }
 
 .projecth1 {
     margin: auto;
 
-    @media (min-width: 1px) and (max-width: 760px) {
-        text-align: start;
-        margin-left: 20%;
+    @media (min-width: 416px) and (max-width: 1025px) {
+        width: 50%;
     }
 }
 
-.contactTitle {
-    margin-left: 15%;
-}
-
 .skillsTitle { 
-    @media (min-width: 1px) and (max-width: 1024px) {
-        text-align: center;
-        width: 80%;
-        margin: 2%;
-        padding-bottom: 2%;
+    @media (min-width: 416px) and (max-width: 1025px) {
+        width: 40%;
     }
 }

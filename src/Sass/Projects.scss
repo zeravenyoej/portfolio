@@ -1,6 +1,15 @@
+#subtitle {
+    padding-top:1%;
+    font-size: 1.2rem;
+}
+
 #projectsMainDiv {
     display: flex;
     flex-direction: row;
+
+    p {
+        display: none;
+    }
 
     .projects {
         margin: 5% auto;
@@ -21,17 +30,15 @@
                 }
             }
 
-            .stuffAboveCard {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin-bottom: 2%;
-                align-items: center;
+            // .stuffAboveCard {
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-around;
+            //     margin-bottom: 2%;
+            //     align-items: center;
 
-                p {
-                    font-size: 1.2rem;
-                }
-            }
+                
+            // }
 
             .projectCard {
                 position: relative;

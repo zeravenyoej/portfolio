@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hamburger from './Hamburger';
 import { Fade, LightSpeed } from 'react-reveal';
 
-const AboutTablet = () => {
+const AboutSmall = () => {
     const [showContent, setShowContent] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
     let intViewportWidth = window.innerWidth;
@@ -47,4 +47,4 @@ const AboutTablet = () => {
     );
 }
 
-export default AboutTablet;
+export default AboutSmall;
