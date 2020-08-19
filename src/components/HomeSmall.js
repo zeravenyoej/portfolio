@@ -15,19 +15,19 @@ const HomeSmall = () => {
                 <h2>Software Engineer</h2>
 
                 <div id="iconsDiv">
-                    <a target="_blank" className="linkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/joseph-nevarez">
+                    <a target="_blank" className="indIconDiv linkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/joseph-nevarez">
                         <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                         <p className="linkedIn">LinkedIn</p>
                     </a>
-                    <a target="_blank" className="github" rel="noopener noreferrer" href="https://github.com/zeravenyoej">
+                    <a target="_blank" className="indIconDiv github" rel="noopener noreferrer" href="https://github.com/zeravenyoej">
                         <FontAwesomeIcon className="icon" icon={faGithubSquare}/>
                         <p className="github">GitHub</p>
                     </a>
-                    <a target="_blank" className="medium" rel="noopener noreferrer" href="https://medium.com/@josephnevarez12">
+                    <a target="_blank" className="indIconDiv medium" rel="noopener noreferrer" href="https://medium.com/@josephnevarez12">
                         <FontAwesomeIcon className="icon" icon={faMedium}/>
                         <p className="Medium">Blog</p>
                     </a>
-                    <a target="_blank" className="email" rel="noopener noreferrer" href="mailto:josephnevarez12@gmail.com">
+                    <a target="_blank" className="indIconDiv email" rel="noopener noreferrer" href="mailto:josephnevarez12@gmail.com">
                         <FontAwesomeIcon className="icon" icon={faEnvelopeSquare}/>
                         <p className="email">Email</p>
                     </a>
