@@ -47,10 +47,7 @@
     .skillsContent {
         display: flex;
         flex-wrap: wrap;
-
-        @media (min-width: 1px) and (max-width: 415px) {
-            justify-content: center;
-        }
+        justify-content: center;
     
         .skills {
             width: 110px;
