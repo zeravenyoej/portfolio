@@ -1,15 +1,21 @@
-#aboutMobile { 
+#aboutSmall {
+    
     .about {
         flex-direction: column;
         margin: auto;
 
         #aboutImage {
-            width: 300px;
-            height: 400px;
+            width: 500px;
+            height: 508px;
             background: url("../images/CityMe.png");
-            background-position: left;
+            background-position: center bottom;
             margin: auto;
-            position: static;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                width: 300px;
+                height: 400px;
+                background-position: left;
+            }
         }
         
         #aboutText {
@@ -18,9 +24,8 @@
             margin: auto;
             margin-top: 5%;
             width: 600px;
-            padding-bottom: 5%;
         }
-
+        
         a { 
             text-decoration: underline;
             color: black
