@@ -42,9 +42,9 @@ const HomeSmall = () => {
                     </a>
                 </div>
 
-                <div onClick={()=>history.push("/about")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
-                    <h1>ABOUT ME</h1>
-                    <div id={intViewportWidth > 415 ? "mainAboutImageTablet" : "mainAboutImageMobile"}></div>
+                <div onClick={()=>history.push("/skills")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+                    <h1>SKILLS</h1>
+                    <div id={intViewportWidth > 415 ? "mainSkillsImageTablet" : "mainSkillsImageMobile"}></div>
                 </div>
 
                 <div onClick={()=>history.push("/projects")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
@@ -52,9 +52,9 @@ const HomeSmall = () => {
                     <div id={intViewportWidth > 415 ? "mainProjectImageTablet" : "mainProjectImageMobile"}></div>
                 </div>
 
-                <div onClick={()=>history.push("/skills")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
-                    <h1>SKILLS</h1>
-                    <div id={intViewportWidth > 415 ? "mainSkillsImageTablet" : "mainSkillsImageMobile"}></div>
+                <div onClick={()=>history.push("/about")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+                    <h1>ABOUT ME</h1>
+                    <div id={intViewportWidth > 415 ? "mainAboutImageTablet" : "mainAboutImageMobile"}></div>
                 </div>
             </div>
         </div>

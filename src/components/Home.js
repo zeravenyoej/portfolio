@@ -60,13 +60,13 @@ function Home () {
                         </div>
                     </div>
                     <div
-                        onMouseEnter={()=>setAboutShown(false)}
-                        onMouseLeave={()=>setAboutShown(true)}
-                        onClick={()=>history.push("/about")}
-                        className={`mainContainer ${aboutShown ? "mainAboutImage" : null}`}>
-                        {!aboutShown && (
+                        onMouseEnter={()=>setSkillsShown(false)}
+                        onMouseLeave={()=>setSkillsShown(true)}
+                        onClick={()=>history.push("/skills")}
+                        className={`mainContainer ${skillsShown ? "mainSkillsImage" : null}`}>
+                        {!skillsShown && (
                         <div className="mainTextDiv">
-                            <h1>ABOUT ME</h1>
+                            <h1>SKILLS</h1>
                         </div>
                         )}
                     </div>
@@ -82,13 +82,13 @@ function Home () {
                         )}
                     </div>
                     <div
-                        onMouseEnter={()=>setSkillsShown(false)}
-                        onMouseLeave={()=>setSkillsShown(true)}
-                        onClick={()=>history.push("/skills")}
-                        className={`mainContainer ${skillsShown ? "mainSkillsImage" : null}`}>
-                        {!skillsShown && (
+                        onMouseEnter={()=>setAboutShown(false)}
+                        onMouseLeave={()=>setAboutShown(true)}
+                        onClick={()=>history.push("/about")}
+                        className={`mainContainer ${aboutShown ? "mainAboutImage" : null}`}>
+                        {!aboutShown && (
                         <div className="mainTextDiv">
-                            <h1>SKILLS</h1>
+                            <h1>ABOUT ME</h1>
                         </div>
                         )}
                     </div>
