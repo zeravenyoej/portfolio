@@ -1,0 +1,119 @@
+#homeSmall {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+  
+    .mainContent {
+        margin: 5.5%;
+        width: 90%;
+
+        #name {
+            font-size: 4rem;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                font-size: 3rem;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 3%;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                font-size: 1.7rem;
+            }
+        }
+
+        h1 {
+            font-family: 'Bowlby One', cursive;
+            margin-bottom: 4%;
+            font-size: 2.5rem;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                font-size: 2.0rem;
+            }
+        }
+
+        #iconsDiv {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 5%;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                width: 75%;
+                margin: 5% auto;
+            }
+
+            .icon {
+                height: 120px;
+                width: 120px;
+                margin: 5% 5%;
+
+                @media (min-width: 1px) and (max-width: 415px) {
+                    height: 90px;
+                    width: 90px;
+                }
+            }
+
+            p {
+                text-decoration: none;
+                font-size: 1.5rem;
+
+                @media (min-width: 1px) and (max-width: 415px) {
+                   font-size: 1rem;
+                }
+            }
+            
+            .linkedIn {
+                color:#0E76A8;
+            }
+
+            .github {
+                color: #a80e28;
+            }
+
+            .medium {
+                color:#66cdaa;
+            }
+
+            .email {
+                color: #e4981f;
+            }
+        }
+    }
+}
+
+#mainProjectImage {
+    background: url("../images/SignLingoLg.png");
+    background-size: cover;
+    height: 450px;
+
+    @media (min-width: 1px) and (max-width: 415px) {
+        height: 300px;
+    }
+}
+
+#mainSkillsImage {
+    background: url("../images/community.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+    @media (min-width: 1px) and (max-width: 415px) {
+        height: 300px;
+    }
+}
+
+#mainAboutImage {
+    background: url("../images/hawaii.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    height: 450px;
+
+    @media (min-width: 1px) and (max-width: 415px) {
+        height: 300px;
+    }
+}

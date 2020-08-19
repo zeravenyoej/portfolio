@@ -6,16 +6,15 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const HomeSmall = () => {
     const history = useHistory();
-    let intViewportWidth = window.innerWidth;
 
     return (
-        <div id={intViewportWidth > 415 ? "homeTablet" : "homeMobile"}>
-            <div className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+        <div id="homeSmall">
+            <div className="mainContent">
                 <h1 id="name">Joseph Nevarez</h1>
                     <hr/>
                 <h2>Software Engineer</h2>
 
-                <div id={intViewportWidth > 415 ? "iconsDivTablet" : "iconsDivMobile"}>
+                <div id="iconsDiv">
                     <a target="_blank" className="linkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/joseph-nevarez">
                         <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                         <p className="linkedIn">LinkedIn</p>
@@ -34,19 +33,19 @@ const HomeSmall = () => {
                     </a>
                 </div>
 
-                <div onClick={()=>history.push("/skills")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+                <div onClick={()=>history.push("/skills")} className="mainContent">
                     <h1>SKILLS</h1>
-                    <div id={intViewportWidth > 415 ? "mainSkillsImageTablet" : "mainSkillsImageMobile"}></div>
+                    <div id="mainSkillsImage"></div>
                 </div>
 
-                <div onClick={()=>history.push("/projects")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+                <div onClick={()=>history.push("/projects")} className="mainContent">
                     <h1>PROJECTS</h1>
-                    <div id={intViewportWidth > 415 ? "mainProjectImageTablet" : "mainProjectImageMobile"}></div>
+                    <div id="mainProjectImage"></div>
                 </div>
 
-                <div onClick={()=>history.push("/about")} className={intViewportWidth > 415 ? "mainContentTablet" : "mainContentMobile"}>
+                <div onClick={()=>history.push("/about")} className="mainContent">
                     <h1>ABOUT ME</h1>
-                    <div id={intViewportWidth > 415 ? "mainAboutImageTablet" : "mainAboutImageMobile"}></div>
+                    <div id="mainAboutImage"></div>
                 </div>
             </div>
         </div>
