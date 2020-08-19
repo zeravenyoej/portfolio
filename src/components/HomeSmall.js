@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare, faCamera} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const HomeSmall = () => {
     const history = useHistory();
@@ -20,25 +20,17 @@ const HomeSmall = () => {
                         <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                         <p className="linkedIn">LinkedIn</p>
                     </a>
-
                     <a target="_blank" className="github" rel="noopener noreferrer" href="https://github.com/zeravenyoej">
                         <FontAwesomeIcon className="icon" icon={faGithubSquare}/>
                         <p className="github">GitHub</p>
                     </a>
-
                     <a target="_blank" className="medium" rel="noopener noreferrer" href="https://medium.com/@josephnevarez12">
                         <FontAwesomeIcon className="icon" icon={faMedium}/>
                         <p className="Medium">Blog</p>
                     </a>
-
                     <a target="_blank" className="email" rel="noopener noreferrer" href="mailto:josephnevarez12@gmail.com">
                         <FontAwesomeIcon className="icon" icon={faEnvelopeSquare}/>
                         <p className="email">Email</p>
-                    </a>
-
-                    <a target="_blank" className="letterboxd" rel="noopener noreferrer" href="https://letterboxd.com/zeravenyoej">
-                        <FontAwesomeIcon className="icon" icon={faCamera}/>
-                        <p className="letterboxd">Movies</p>
                     </a>
                 </div>
 

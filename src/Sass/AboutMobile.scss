@@ -1,5 +1,4 @@
 #aboutMobile { 
-    
     .about {
         flex-direction: column;
         margin: auto;
@@ -20,6 +19,11 @@
             margin-top: 5%;
             width: 600px;
             padding-bottom: 5%;
+        }
+
+        a { 
+            text-decoration: underline;
+            color: black
         }
     }
 }

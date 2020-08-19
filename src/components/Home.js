@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faMedium, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faCaretDown, faEnvelopeSquare, faCamera } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import HomeSmall from './HomeSmall';
 
 function Home () {
@@ -47,13 +47,6 @@ function Home () {
                                     <div className="hide">
                                         <FontAwesomeIcon id="emailArrow" icon={faCaretDown}/>
                                         <p id="emailP">Email</p>
-                                    </div>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://letterboxd.com/zeravenyoej">
-                                    <FontAwesomeIcon className="icon letterboxd" icon={faCamera}/>
-                                    <div className="hide">
-                                        <FontAwesomeIcon id="letterboxdArrow" icon={faCaretDown}/>
-                                        <p id="letterboxdP">Movies</p>
                                     </div>
                                 </a>
                             </div>
