@@ -8,7 +8,7 @@ import cuid from "cuid";
 const Hamburger = () => {
     const [navOpen, setNavOpen] = useState(false);
     const history = useHistory();
-    const data = ['home', 'about', 'projects', 'skills'];
+    const data = ['home', 'projects', 'skills', 'about'];
     let intViewportWidth = window.innerWidth;
 
     return (
