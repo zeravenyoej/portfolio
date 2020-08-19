@@ -3,12 +3,35 @@
     justify-content: space-between;
     margin-left: 18%;
     margin-top: 5%;
-    
+
+    @media (min-width: 416px) and (max-width: 1025px) {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    @media (min-width: 1px) and (max-width: 415px) {
+        flex-direction: column;
+        margin: auto;
+    }
+
     #aboutImage {
         width: 500px;
         height: 628px;
         background: url("../images/CityMe.png");
         margin-left: 2.5%;
+
+        @media (min-width: 416px) and (max-width: 1025px) {
+            height: 508px;
+            background-position: center bottom;
+            margin: auto;
+        }
+
+        @media (min-width: 1px) and (max-width: 415px) {
+            width: 300px;
+            height: 400px;
+            background-position: left;
+            margin: auto;
+        }
     }
 
     #aboutText {
@@ -18,7 +41,15 @@
         border-left: 1px solid black;
         text-align: left;
         text-indent: 25px;
+
+        @media (min-width: 1px) and (max-width: 1025px) {
+            border-left: none;
+            margin: auto;
+            margin-top: 5%;
+            width: 600px;
+        }
     }
+
     a { 
         text-decoration: underline;
         color: black

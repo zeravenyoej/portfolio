@@ -9,7 +9,7 @@ import Hamburger from './Hamburger';
 
 const Projects = () => {
     const [signFlipped, setSignFlipped] = useState(false);
-    let intViewportWidth = window.innerWidth
+    let intViewportWidth = window.innerWidth;
 
     return (
         <>
