@@ -4,16 +4,23 @@
 }
 
 #projectsMainDiv {
-    display: flex;
-    flex-direction: row;
-
+    
     .projects {
         margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        margin: auto 20%;
+
+        @media (min-width: 1px) and (max-width: 1024px) {
+            flex-direction: column;
+            margin:auto
+        }
   
         section {
             display: flex;
             flex-direction: column;
             width: 300px;
+            margin: 5% auto;
       
             .textSide {
                 background: #c0ccd1;
@@ -42,8 +49,15 @@
                 width: inherit;
                 cursor: pointer;
     
-                .projectCardWithImage {
+                .signLingo{
                     background: url('../images/SignLingo.png');
+                }
+                
+                .sauti {
+                    background: url('../images/market.jpg');
+                }
+
+                .projectCardWithImage {
                     height: inherit;
                 }
             }
