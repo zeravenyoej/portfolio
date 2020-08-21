@@ -31,7 +31,7 @@ const SingLingo = () => {
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/signlingo-fe/pull/38">dashboard</a>, and&nbsp;
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/signlingo-fe/pull/45">alphabet lessons</a>.
                         </p>
-                        <p>I managed the flow of the app with my prior language curriculum expertise. We focused solely on the alphabet, and so I advocated for a present/practice/product model, and encouraged the team that would inherit the project to use a more robust language education framework to accommodate more complex language features. To further ease the handoff of this project, we routinely created user stories on a trello board and completed a project vision document.</p>
+                        <p>I managed the flow of the app with my prior language curriculum expertise. We focused solely on the alphabet, and so I advocated for a present/practice/product model, and encouraged the team that would inherit the project to use a more robust language education framework to accommodate more complex language features. To further ease the handoff of this project, we routinely created user stories on a Trello board and completed a project vision document.</p>
                         <p>Here’s&nbsp;  
                             <a target="_blank" rel="noopener noreferrer" href="https://master.d2965nx2i7rdu0.amplifyapp.com">the deployed site</a>,&nbsp;
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/signlingo-fe">the GitHub repository</a>,&nbsp;

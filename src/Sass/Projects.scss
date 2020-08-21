@@ -9,7 +9,6 @@
     margin: auto 20%;
     
     @media (min-width: 1px) and (max-width: 1024px) {
-        flex-direction: column;
         margin: auto;
     }
     
@@ -18,10 +17,21 @@
         display: flex;
         margin: 3% 0;
 
+        @media (min-width: 1px) and (max-width: 415px) {
+            flex-direction: column;
+            margin: auto;
+            padding: 2%;
+            border: none;
+        }
+
         .projectCard {
             height: 525px;
             width: 300px;
             cursor: pointer;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                margin: 2% auto;
+            }
 
             .signLingo {
                 background: url('../images/SignLingo.png');
@@ -44,31 +54,16 @@
                 height: inherit;
             }
         }
-
-        // .stuffUnderCard {
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-
-           
-
-        //     .projectLinks {
-        //         display: flex;
-        //         justify-content: space-evenly;
-        //         width: 75%;
-        //     }
-
-        //     .link {
-        //         width: 50px;
-        //         height: 50px;
-        //         color: black;
-        //     }
-        // }    
+  
         .description {
             min-width: 59.2%;
             background: #dee7eb;
             padding: 0 2%;
             text-align: left;
+
+            @media (min-width: 1px) and (max-width: 415px) {
+                border: 1px solid black;
+            }
 
             .header {
                 display: flex;
@@ -103,5 +98,12 @@
                 }
             }
         }
+    }
+}
+
+#sautiSection {
+    @media (min-width: 1px) and (max-width: 415px) {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
