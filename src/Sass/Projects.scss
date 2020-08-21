@@ -66,8 +66,8 @@
         // }    
         .description {
             min-width: 59.2%;
-            background: #c0ccd1;
-            padding: 0 5%;
+            background: #dee7eb;
+            padding: 0 2%;
             text-align: left;
 
             .header {
@@ -93,11 +93,14 @@
             }
 
             .descriptionText{
-                font-size: 1rem;
-                padding-top: 3%;
+                font-size: .9rem;
+                padding: 3% 0;
                 text-align: left;
                 text-indent: 25px;
-        
+
+                a {
+                    color: black;
+                }
             }
         }
     }
