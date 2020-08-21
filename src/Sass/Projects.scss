@@ -3,87 +3,102 @@
     font-size: 1.2rem;
 }
 
-#projectsMainDiv {
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin: auto 20%;
     
-    .projects {
-        margin: 5% auto;
+    @media (min-width: 1px) and (max-width: 1024px) {
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    section {
+        border: 1px solid black;
         display: flex;
-        flex-direction: row;
-        margin: auto 20%;
+        margin: 3% 0;
 
-        @media (min-width: 1px) and (max-width: 1024px) {
-            flex-direction: column;
-            margin:auto
-        }
-  
-        section {
-            display: flex;
-            flex-direction: column;
+        .projectCard {
+            height: 525px;
             width: 300px;
-            margin: 5% auto;
-      
-            .textSide {
-                background: #c0ccd1;
-                padding: 0 10%;
-                text-align: left;
+            cursor: pointer;
 
-                h3 {
-                    padding-top: 8%;
-                    text-align: center;
-                }
+            .signLingo {
+                background: url('../images/SignLingo.png');
+            }
 
-                h5 {
-                    text-align: center; 
-                }
+            .signLingoBack {
+                background: url('../images/quiz.png');
+                background-size: cover;
+            }
+
+            .sauti {
+                background: url('../images/market.jpg');
+            }
+
+            .sautiBack {
+                background: url('../images/code.png');
+            }
+
+            .projectCardWithImage {
+                height: inherit;
+            }
+        }
+
+        // .stuffUnderCard {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+
+           
+
+        //     .projectLinks {
+        //         display: flex;
+        //         justify-content: space-evenly;
+        //         width: 75%;
+        //     }
+
+        //     .link {
+        //         width: 50px;
+        //         height: 50px;
+        //         color: black;
+        //     }
+        // }    
+        .description {
+            min-width: 59.2%;
+            background: #c0ccd1;
+            padding: 0 5%;
+            text-align: left;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                h1 {
+                    font-size: 2.5rem;
+                }  
 
                 .date {
                     padding-top: 10px;
                     padding-bottom: 5px;
-                    text-decoration: underline;
+                    text-emphasis: 900;
                 }
             }
-
-            .projectCard {
-                position: relative;
-                height: 525px;
-                width: inherit;
-                cursor: pointer;
-    
-                .signLingo{
-                    background: url('../images/SignLingo.png');
-                }
-                
-                .sauti {
-                    background: url('../images/market.jpg');
-                }
-
-                .projectCardWithImage {
-                    height: inherit;
-                }
+            
+            h5 {
+                margin-top: 1%;
+                text-align: left; 
             }
-    
-            .stuffUnderCard {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-    
-                h1 {
-                    font-size: 2.5rem;
-                    margin: 2% 0;
-                }  
-    
-                .projectLinks {
-                    display: flex;
-                    justify-content: space-evenly;
-                    width: 75%;
-                }
 
-                .link {
-                    width: 50px;
-                    height: 50px;
-                    color: black;
-                }
-            }    
+            .descriptionText{
+                font-size: 1rem;
+                padding-top: 3%;
+                text-align: left;
+                text-indent: 25px;
+        
+            }
         }
     }
 }

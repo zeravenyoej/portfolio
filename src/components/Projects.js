@@ -14,14 +14,12 @@ const Projects = () => {
 
             <Bounce top> 
                 <h1 className={`titleh1 projecth1`} >projects</h1> 
-                <p id="subtitle">click pictures below to learn more</p>
+                <p id="subtitle">click pictures below to see more</p>
             </Bounce>
 
-            <div id="projectsMainDiv">
-                <div className="projects">
-                    <SingLingo/>
-                    <SautiAfrica/>
-                </div>
+            <div className="projects">
+                <SingLingo/>
+                <SautiAfrica/>
             </div>
         </>
     );
