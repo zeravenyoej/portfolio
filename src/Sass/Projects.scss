@@ -113,7 +113,7 @@
     }
 }
 
-#sautiSection {
+#sautiSection, #nasaSection {
     @media (min-width: 1px) and (max-width: 415px) {
         display: flex;
         flex-direction: column-reverse;

@@ -10,7 +10,7 @@ const NASA = () => {
             <section id="nasaSection">
                 <div className="description">
                     <div className="header">
-                        <h1>NASA Photo of the Day</h1>
+                        <h1>NASA <br/> Photo of the Day</h1>
                         <h5 className="date">October 2019</h5>
                     </div>
                     <h5>Tech Stack: ReactJS, Moment, CSS</h5>
