@@ -8,6 +8,16 @@ const NASA = () => {
     return (
         <Slide left>
             <section id="nasaSection">
+                <ReactCardFlip isFlipped={signFlipped}>
+                    <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
+                        <div className="projectCardWithImage nasa"></div>
+                    </div>
+
+                    <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
+                        <div className="projectCardWithImage nasaBack"></div>
+                    </div>
+                </ReactCardFlip>
+                
                 <div className="description">
                     <div className="header">
                         <h1>NASA <br/> Photo of the Day</h1>
@@ -25,16 +35,6 @@ const NASA = () => {
                         </p>
                     </div>
                 </div>
-
-                <ReactCardFlip isFlipped={signFlipped}>
-                    <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
-                        <div className="projectCardWithImage nasa"></div>
-                    </div>
-
-                    <div onClick={()=>setSignFlipped(!signFlipped)} className="projectCard">
-                        <div className="projectCardWithImage nasaBack"></div>
-                    </div>
-                </ReactCardFlip>
             </section>
         </Slide>
     );
