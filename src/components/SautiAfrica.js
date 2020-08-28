@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Slide } from 'react-reveal';
 
 const SautiAfrica = () => {

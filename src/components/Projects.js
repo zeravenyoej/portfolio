@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Hamburger from './Hamburger';
 import SingLingo from './SingLingo';
 import SautiAfrica from './SautiAfrica';
+import NASA from './NASA';
 
 const Projects = () => {
     let intViewportWidth = window.innerWidth;
@@ -20,6 +21,7 @@ const Projects = () => {
             <div className="projects">
                 <SingLingo/>
                 <SautiAfrica/>
+                <NASA/>
             </div>
         </>
     );

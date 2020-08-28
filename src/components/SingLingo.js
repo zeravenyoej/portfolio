@@ -22,7 +22,7 @@ const SingLingo = () => {
                         <h1>SignLingo</h1>
                         <h5 className="date">April-May 2020</h5>
                     </div>
-                    <h5>Tech Stack: React, Redux, Sass, Material UI, React Card Flip, Formik</h5>
+                    <h5>Tech Stack: ReactJS, Redux, Sass, Material UI, React Card Flip, Formik</h5>
                         <br/><hr/>
                     <div className="descriptionText">
                         <p>SignLingo is a mobile, sign language learning platform built to the specifications of a client on a remote, cross-functional team of 24 over 8 weeks. My team communicated through daily stand ups with our team lead, frequent pair programming, and periodic progress presentations with our UX Designer/stakeholder. We all touched on every area of the app, but I contributed most significantly to the&nbsp; 

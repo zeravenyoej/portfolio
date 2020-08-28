@@ -50,6 +50,18 @@
                 background: url('../images/code.png');
             }
 
+            .nasa {
+                background: url('../images/nasaFront.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .nasaBack {
+                background: url('../images/nasaBack.png');
+                background-size: cover;
+                background-position: center;
+            }
+
             .projectCardWithImage {
                 height: inherit;
             }
