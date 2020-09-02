@@ -27,10 +27,11 @@ const HomeSmall = () => {
                         <FontAwesomeIcon className="icon" icon={faMedium}/>
                         <p className="Medium">Blog</p>
                     </a>
-                    <a target="_blank" className="indIconDiv email" rel="noopener noreferrer" href="mailto:josephnevarez12@gmail.com">
-                        <FontAwesomeIcon className="icon" icon={faEnvelopeSquare}/>
-                        <p className="email">Email</p>
-                    </a>
+                    <div
+                        onClick={()=>history.push("/contact")}>
+                        <FontAwesomeIcon className="icon email" icon={faEnvelopeSquare}/>
+                        <p className="email">Email</p> 
+                    </div>
                 </div>
 
                 <div onClick={()=>history.push("/skills")} className="mainContent">

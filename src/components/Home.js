@@ -42,13 +42,14 @@ function Home () {
                                         <p id="mediumP">Blog</p>
                                     </div>
                                 </a>
-                                <a target="_blank" rel="noopener noreferrer" href="mailto:josephnevarez12@gmail.com">
+                                <div
+                                    onClick={()=>history.push("/contact")}>
                                     <FontAwesomeIcon className="icon email" icon={faEnvelopeSquare}/>
                                     <div className="hide">
                                         <FontAwesomeIcon id="emailArrow" icon={faCaretDown}/>
                                         <p id="emailP">Email</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
